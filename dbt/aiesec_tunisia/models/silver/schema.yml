@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: performance
+    columns:
+      - name: bronze_id
+        tests:
+          - not_null
+      - name: value
+        tests:
+          - not_null
+      - name: stage
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['sign_ups','applicants','accepted','approved','realized','finished','completed']

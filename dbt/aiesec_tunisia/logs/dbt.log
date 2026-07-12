@@ -1,0 +1,2897 @@
+[0m17:28:04.317179 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe4cf0aeed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe4cf49c110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe4cf0aed50>]}
+
+
+============================== 17:28:04.325831 | 2cf73faf-0cd1-443d-9953-f9bb5b58c083 ==============================
+[0m17:28:04.325831 [info ] [MainThread]: Running with dbt=1.8.3
+[0m17:28:04.327986 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/root/.dbt', 'log_path': '/usr/app/dbt/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:28:04.342039 [info ] [MainThread]: dbt version: 1.8.3
+[0m17:28:04.344001 [info ] [MainThread]: python version: 3.11.2
+[0m17:28:04.346180 [info ] [MainThread]: python path: /usr/local/bin/python
+[0m17:28:04.348244 [info ] [MainThread]: os info: Linux-5.15.146.1-microsoft-standard-WSL2-x86_64-with-glibc2.31
+[0m17:28:04.460466 [info ] [MainThread]: Using profiles dir at /root/.dbt
+[0m17:28:04.462973 [info ] [MainThread]: Using profiles.yml file at /root/.dbt/profiles.yml
+[0m17:28:04.465315 [info ] [MainThread]: Using dbt_project.yml file at /usr/app/dbt/dbt_project.yml
+[0m17:28:04.467566 [info ] [MainThread]: adapter type: postgres
+[0m17:28:04.469513 [info ] [MainThread]: adapter version: 1.8.2
+[0m17:28:04.597376 [info ] [MainThread]: Configuration:
+[0m17:28:04.599090 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m17:28:04.601212 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m17:28:04.602986 [info ] [MainThread]: Required dependencies:
+[0m17:28:04.604982 [debug] [MainThread]: Executing "git --help"
+[0m17:28:04.609700 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m17:28:04.611946 [debug] [MainThread]: STDERR: "b''"
+[0m17:28:04.613803 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m17:28:04.615883 [info ] [MainThread]: Connection:
+[0m17:28:04.618273 [info ] [MainThread]:   host: postgres
+[0m17:28:04.620195 [info ] [MainThread]:   port: 5432
+[0m17:28:04.622181 [info ] [MainThread]:   user: aiesec
+[0m17:28:04.624812 [info ] [MainThread]:   database: aiesec_dw
+[0m17:28:04.627069 [info ] [MainThread]:   schema: silver
+[0m17:28:04.628947 [info ] [MainThread]:   connect_timeout: 10
+[0m17:28:04.630854 [info ] [MainThread]:   role: None
+[0m17:28:04.633013 [info ] [MainThread]:   search_path: None
+[0m17:28:04.636243 [info ] [MainThread]:   keepalives_idle: 0
+[0m17:28:04.638313 [info ] [MainThread]:   sslmode: None
+[0m17:28:04.640098 [info ] [MainThread]:   sslcert: None
+[0m17:28:04.642190 [info ] [MainThread]:   sslkey: None
+[0m17:28:04.644281 [info ] [MainThread]:   sslrootcert: None
+[0m17:28:04.646596 [info ] [MainThread]:   application_name: dbt
+[0m17:28:04.648686 [info ] [MainThread]:   retries: 1
+[0m17:28:04.652263 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m17:28:04.657191 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m17:28:04.716101 [debug] [MainThread]: Using postgres connection "debug"
+[0m17:28:04.717745 [debug] [MainThread]: On debug: select 1 as id
+[0m17:28:04.719193 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:28:04.729747 [debug] [MainThread]: SQL status: SELECT 1 in 0.0 seconds
+[0m17:28:04.731855 [debug] [MainThread]: On debug: Close
+[0m17:28:04.733198 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m17:28:04.735463 [info ] [MainThread]: [32mAll checks passed![0m
+[0m17:28:04.737602 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 0.5042908, "process_user_time": 1.770688, "process_kernel_time": 0.109424, "process_mem_max_rss": "105588", "process_out_blocks": "80", "process_in_blocks": "0"}
+[0m17:28:04.739201 [debug] [MainThread]: Command `dbt debug` succeeded at 17:28:04.738991 after 0.51 seconds
+[0m17:28:04.740317 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m17:28:04.741458 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe4cf27c110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe4cf0f1390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe4cf0f1710>]}
+[0m17:28:04.742667 [debug] [MainThread]: Flushing usage events
+[0m17:28:08.747926 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m17:28:47.234297 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1d92087bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1d920cfd50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1d922543d0>]}
+
+
+============================== 17:28:47.239014 | 74fa39a7-5efe-44a2-8035-74cf50f20b03 ==============================
+[0m17:28:47.239014 [info ] [MainThread]: Running with dbt=1.8.3
+[0m17:28:47.240949 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/root/.dbt', 'log_path': '/usr/app/dbt/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run --select silver.performance', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m17:28:47.450146 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '74fa39a7-5efe-44a2-8035-74cf50f20b03', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1d920fb190>]}
+[0m17:28:47.518386 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '74fa39a7-5efe-44a2-8035-74cf50f20b03', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1d9219f550>]}
+[0m17:28:47.520871 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m17:28:47.537732 [debug] [MainThread]: checksum: 30bd4080c2bc8dee5936f8f60083ffbe1c906859d0fd965607c2144031479456, vars: {}, profile: , target: , version: 1.8.3
+[0m17:28:47.543963 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m17:28:47.545906 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '74fa39a7-5efe-44a2-8035-74cf50f20b03', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1d92086890>]}
+[0m17:28:49.094249 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `tests` config has been renamed to `data_tests`. Please see
+https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+information.
+[0m17:28:49.096584 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '74fa39a7-5efe-44a2-8035-74cf50f20b03', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1d908119d0>]}
+[0m17:28:49.537950 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.aiesec_tunisia.gold
+[0m17:28:49.555286 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '74fa39a7-5efe-44a2-8035-74cf50f20b03', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1d90660ad0>]}
+[0m17:28:49.732271 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '74fa39a7-5efe-44a2-8035-74cf50f20b03', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1d906c7510>]}
+[0m17:28:49.734390 [info ] [MainThread]: Found 1 model, 4 data tests, 1 source, 415 macros
+[0m17:28:49.736328 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '74fa39a7-5efe-44a2-8035-74cf50f20b03', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1d91f1c590>]}
+[0m17:28:49.739679 [info ] [MainThread]: 
+[0m17:28:49.741800 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m17:28:49.745013 [debug] [ThreadPool]: Acquiring new postgres connection 'list_aiesec_dw'
+[0m17:28:49.803437 [debug] [ThreadPool]: Using postgres connection "list_aiesec_dw"
+[0m17:28:49.805084 [debug] [ThreadPool]: On list_aiesec_dw: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "aiesec_tunisia", "target_name": "dev", "connection_name": "list_aiesec_dw"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m17:28:49.806599 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:28:49.817558 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.0 seconds
+[0m17:28:49.820379 [debug] [ThreadPool]: On list_aiesec_dw: Close
+[0m17:28:49.823088 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_aiesec_dw, now create_aiesec_dw_silver)
+[0m17:28:49.825014 [debug] [ThreadPool]: Creating schema "database: "aiesec_dw"
+schema: "silver"
+"
+[0m17:28:49.834243 [debug] [ThreadPool]: Using postgres connection "create_aiesec_dw_silver"
+[0m17:28:49.835860 [debug] [ThreadPool]: On create_aiesec_dw_silver: BEGIN
+[0m17:28:49.837357 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:28:49.847436 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m17:28:49.849169 [debug] [ThreadPool]: Using postgres connection "create_aiesec_dw_silver"
+[0m17:28:49.850656 [debug] [ThreadPool]: On create_aiesec_dw_silver: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "aiesec_tunisia", "target_name": "dev", "connection_name": "create_aiesec_dw_silver"} */
+create schema if not exists "silver"
+[0m17:28:49.855414 [debug] [ThreadPool]: SQL status: CREATE SCHEMA in 0.0 seconds
+[0m17:28:49.857909 [debug] [ThreadPool]: On create_aiesec_dw_silver: COMMIT
+[0m17:28:49.859457 [debug] [ThreadPool]: Using postgres connection "create_aiesec_dw_silver"
+[0m17:28:49.860776 [debug] [ThreadPool]: On create_aiesec_dw_silver: COMMIT
+[0m17:28:49.866138 [debug] [ThreadPool]: SQL status: COMMIT in 0.0 seconds
+[0m17:28:49.867806 [debug] [ThreadPool]: On create_aiesec_dw_silver: Close
+[0m17:28:49.872009 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_aiesec_dw_silver, now list_aiesec_dw_silver)
+[0m17:28:49.881141 [debug] [ThreadPool]: Using postgres connection "list_aiesec_dw_silver"
+[0m17:28:49.882852 [debug] [ThreadPool]: On list_aiesec_dw_silver: BEGIN
+[0m17:28:49.884461 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:28:49.894611 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m17:28:49.896464 [debug] [ThreadPool]: Using postgres connection "list_aiesec_dw_silver"
+[0m17:28:49.898299 [debug] [ThreadPool]: On list_aiesec_dw_silver: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "aiesec_tunisia", "target_name": "dev", "connection_name": "list_aiesec_dw_silver"} */
+select
+      'aiesec_dw' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'silver'
+    union all
+    select
+      'aiesec_dw' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'silver'
+    union all
+    select
+      'aiesec_dw' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'silver'
+  
+[0m17:28:49.916066 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.0 seconds
+[0m17:28:49.918833 [debug] [ThreadPool]: On list_aiesec_dw_silver: ROLLBACK
+[0m17:28:49.920961 [debug] [ThreadPool]: On list_aiesec_dw_silver: Close
+[0m17:28:49.929459 [debug] [MainThread]: Using postgres connection "master"
+[0m17:28:49.930998 [debug] [MainThread]: On master: BEGIN
+[0m17:28:49.932471 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:28:49.941977 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m17:28:49.943852 [debug] [MainThread]: Using postgres connection "master"
+[0m17:28:49.945815 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "aiesec_tunisia", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m17:28:49.986530 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m17:28:49.989229 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '74fa39a7-5efe-44a2-8035-74cf50f20b03', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1d90811610>]}
+[0m17:28:49.991003 [debug] [MainThread]: On master: ROLLBACK
+[0m17:28:49.993018 [debug] [MainThread]: Using postgres connection "master"
+[0m17:28:49.994930 [debug] [MainThread]: On master: BEGIN
+[0m17:28:49.997167 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m17:28:49.998692 [debug] [MainThread]: On master: COMMIT
+[0m17:28:50.000309 [debug] [MainThread]: Using postgres connection "master"
+[0m17:28:50.001914 [debug] [MainThread]: On master: COMMIT
+[0m17:28:50.003941 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m17:28:50.005319 [debug] [MainThread]: On master: Close
+[0m17:28:50.007139 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m17:28:50.008754 [info ] [MainThread]: 
+[0m17:28:50.022704 [debug] [Thread-1 (]: Began running node model.aiesec_tunisia.performance
+[0m17:28:50.024772 [info ] [Thread-1 (]: 1 of 1 START sql table model silver.performance ................................ [RUN]
+[0m17:28:50.027135 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_aiesec_dw_silver, now model.aiesec_tunisia.performance)
+[0m17:28:50.029125 [debug] [Thread-1 (]: Began compiling node model.aiesec_tunisia.performance
+[0m17:28:50.049978 [debug] [Thread-1 (]: Writing injected SQL for node "model.aiesec_tunisia.performance"
+[0m17:28:50.076781 [debug] [Thread-1 (]: Began executing node model.aiesec_tunisia.performance
+[0m17:28:50.136867 [debug] [Thread-1 (]: Writing runtime sql for node "model.aiesec_tunisia.performance"
+[0m17:28:50.159461 [debug] [Thread-1 (]: Using postgres connection "model.aiesec_tunisia.performance"
+[0m17:28:50.160569 [debug] [Thread-1 (]: On model.aiesec_tunisia.performance: BEGIN
+[0m17:28:50.161563 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:28:50.172031 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m17:28:50.173969 [debug] [Thread-1 (]: Using postgres connection "model.aiesec_tunisia.performance"
+[0m17:28:50.177764 [debug] [Thread-1 (]: On model.aiesec_tunisia.performance: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "aiesec_tunisia", "target_name": "dev", "node_id": "model.aiesec_tunisia.performance"} */
+
+  
+    
+
+  create  table "aiesec_dw"."silver"."performance__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+with source as (
+    select * from "aiesec_dw"."bronze"."raw_performance"
+)
+
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'sign_ups' as stage,
+    'ogx'    as program,
+    cast(su_ogx as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'sign_ups' as stage,
+    'ogv'    as program,
+    cast(su_ogv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'sign_ups' as stage,
+    'ogta'    as program,
+    cast(su_ogta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'sign_ups' as stage,
+    'ogte'    as program,
+    cast(su_ogte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'sign_ups' as stage,
+    'total'    as program,
+    cast(su_total as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'applicants' as stage,
+    'igv'    as program,
+    cast(ap_igv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'applicants' as stage,
+    'igta'    as program,
+    cast(ap_igta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'applicants' as stage,
+    'igte'    as program,
+    cast(ap_igte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'applicants' as stage,
+    'ogv'    as program,
+    cast(ap_ogv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'applicants' as stage,
+    'ogta'    as program,
+    cast(ap_ogta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'applicants' as stage,
+    'ogte'    as program,
+    cast(ap_ogte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'applicants' as stage,
+    'total'    as program,
+    cast(ap_total as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'accepted' as stage,
+    'igv'    as program,
+    cast(ac_igv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'accepted' as stage,
+    'igta'    as program,
+    cast(ac_igta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'accepted' as stage,
+    'igte'    as program,
+    cast(ac_igte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'accepted' as stage,
+    'ogv'    as program,
+    cast(ac_ogv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'accepted' as stage,
+    'ogta'    as program,
+    cast(ac_ogta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'accepted' as stage,
+    'ogte'    as program,
+    cast(ac_ogte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'accepted' as stage,
+    'total'    as program,
+    cast(ac_total as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'approved' as stage,
+    'igv'    as program,
+    cast(av_igv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'approved' as stage,
+    'igta'    as program,
+    cast(av_igta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'approved' as stage,
+    'igte'    as program,
+    cast(av_igte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'approved' as stage,
+    'ogv'    as program,
+    cast(av_ogv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'approved' as stage,
+    'ogta'    as program,
+    cast(av_ogta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'approved' as stage,
+    'ogte'    as program,
+    cast(av_ogte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'approved' as stage,
+    'total'    as program,
+    cast(av_total as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'realized' as stage,
+    'igv'    as program,
+    cast(rl_igv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'realized' as stage,
+    'igta'    as program,
+    cast(rl_igta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'realized' as stage,
+    'igte'    as program,
+    cast(rl_igte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'realized' as stage,
+    'ogv'    as program,
+    cast(rl_ogv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'realized' as stage,
+    'ogta'    as program,
+    cast(rl_ogta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'realized' as stage,
+    'ogte'    as program,
+    cast(rl_ogte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'realized' as stage,
+    'total'    as program,
+    cast(rl_total as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'finished' as stage,
+    'igv'    as program,
+    cast(fn_igv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'finished' as stage,
+    'igta'    as program,
+    cast(fn_igta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'finished' as stage,
+    'igte'    as program,
+    cast(fn_igte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'finished' as stage,
+    'ogv'    as program,
+    cast(fn_ogv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'finished' as stage,
+    'ogta'    as program,
+    cast(fn_ogta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'finished' as stage,
+    'ogte'    as program,
+    cast(fn_ogte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'finished' as stage,
+    'total'    as program,
+    cast(fn_total as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'completed' as stage,
+    'igv'    as program,
+    cast(cp_igv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'completed' as stage,
+    'igta'    as program,
+    cast(cp_igta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'completed' as stage,
+    'igte'    as program,
+    cast(cp_igte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'completed' as stage,
+    'ogv'    as program,
+    cast(cp_ogv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'completed' as stage,
+    'ogta'    as program,
+    cast(cp_ogta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'completed' as stage,
+    'ogte'    as program,
+    cast(cp_ogte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_rank     as lc_rank,
+    raw_lc_name     as lc_name,
+    'completed' as stage,
+    'total'    as program,
+    cast(cp_total as integer) as value
+from source
+
+
+  );
+  
+[0m17:28:50.208398 [debug] [Thread-1 (]: Postgres adapter: Postgres error: invalid input syntax for type integer: "Entity"
+
+[0m17:28:50.212568 [debug] [Thread-1 (]: On model.aiesec_tunisia.performance: ROLLBACK
+[0m17:28:50.215278 [debug] [Thread-1 (]: On model.aiesec_tunisia.performance: Close
+[0m17:28:50.224142 [debug] [Thread-1 (]: Database Error in model performance (models/silver/performance.sql)
+  invalid input syntax for type integer: "Entity"
+  compiled Code at target/run/aiesec_tunisia/models/silver/performance.sql
+[0m17:28:50.228066 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74fa39a7-5efe-44a2-8035-74cf50f20b03', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1d8f938410>]}
+[0m17:28:50.230399 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model silver.performance ....................... [[31mERROR[0m in 0.20s]
+[0m17:28:50.233358 [debug] [Thread-1 (]: Finished running node model.aiesec_tunisia.performance
+[0m17:28:50.238946 [debug] [MainThread]: Using postgres connection "master"
+[0m17:28:50.240702 [debug] [MainThread]: On master: BEGIN
+[0m17:28:50.242312 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:28:50.255297 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m17:28:50.257977 [debug] [MainThread]: On master: COMMIT
+[0m17:28:50.260092 [debug] [MainThread]: Using postgres connection "master"
+[0m17:28:50.262044 [debug] [MainThread]: On master: COMMIT
+[0m17:28:50.264729 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m17:28:50.266299 [debug] [MainThread]: On master: Close
+[0m17:28:50.268079 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:28:50.269880 [debug] [MainThread]: Connection 'model.aiesec_tunisia.performance' was properly closed.
+[0m17:28:50.273124 [info ] [MainThread]: 
+[0m17:28:50.275450 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 0.53 seconds (0.53s).
+[0m17:28:50.278376 [debug] [MainThread]: Command end result
+[0m17:28:50.367497 [info ] [MainThread]: 
+[0m17:28:50.370564 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m17:28:50.372686 [info ] [MainThread]: 
+[0m17:28:50.375106 [error] [MainThread]:   Database Error in model performance (models/silver/performance.sql)
+  invalid input syntax for type integer: "Entity"
+  compiled Code at target/run/aiesec_tunisia/models/silver/performance.sql
+[0m17:28:50.377351 [info ] [MainThread]: 
+[0m17:28:50.379270 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m17:28:50.382120 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 3.2692149, "process_user_time": 4.019463, "process_kernel_time": 0.170827, "process_mem_max_rss": "116108", "process_out_blocks": "120", "command_success": false, "process_in_blocks": "0"}
+[0m17:28:50.385096 [debug] [MainThread]: Command `dbt run` failed at 17:28:50.384764 after 3.27 seconds
+[0m17:28:50.387381 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1d920d8790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1d92254210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1d9207bad0>]}
+[0m17:28:50.389240 [debug] [MainThread]: Flushing usage events
+[0m17:28:54.395329 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m14:37:51.888155 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb8ab68af90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb8ab9143d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb8ab68b010>]}
+
+
+============================== 14:37:51.900581 | ae8ae0aa-7850-478d-8456-7f9694f5f92b ==============================
+[0m14:37:51.900581 [info ] [MainThread]: Running with dbt=1.8.3
+[0m14:37:51.902644 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/usr/app/dbt/logs', 'debug': 'False', 'profiles_dir': '/root/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt compile --select silver.performance', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m14:37:52.177370 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ae8ae0aa-7850-478d-8456-7f9694f5f92b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb8ab688250>]}
+[0m14:37:52.246014 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ae8ae0aa-7850-478d-8456-7f9694f5f92b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb8ab735110>]}
+[0m14:37:52.248338 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m14:37:52.274694 [debug] [MainThread]: checksum: 30bd4080c2bc8dee5936f8f60083ffbe1c906859d0fd965607c2144031479456, vars: {}, profile: , target: , version: 1.8.3
+[0m14:37:52.697973 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m14:37:52.699644 [debug] [MainThread]: Partial parsing: updated file: aiesec_tunisia://models/silver/performance.sql
+[0m14:37:52.983983 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `tests` config has been renamed to `data_tests`. Please see
+https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+information.
+[0m14:37:52.986780 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'ae8ae0aa-7850-478d-8456-7f9694f5f92b', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb8a9d3ad90>]}
+[0m14:37:53.211802 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.aiesec_tunisia.gold
+[0m14:37:53.230877 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ae8ae0aa-7850-478d-8456-7f9694f5f92b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb8a9d64210>]}
+[0m14:37:53.462381 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ae8ae0aa-7850-478d-8456-7f9694f5f92b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb8a9947bd0>]}
+[0m14:37:53.463937 [info ] [MainThread]: Found 1 model, 4 data tests, 1 source, 415 macros
+[0m14:37:53.465651 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ae8ae0aa-7850-478d-8456-7f9694f5f92b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb8a9a44c50>]}
+[0m14:37:53.469072 [info ] [MainThread]: 
+[0m14:37:53.471165 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m14:37:53.473737 [debug] [ThreadPool]: Acquiring new postgres connection 'list_aiesec_dw_silver'
+[0m14:37:53.622766 [debug] [ThreadPool]: Using postgres connection "list_aiesec_dw_silver"
+[0m14:37:53.624838 [debug] [ThreadPool]: On list_aiesec_dw_silver: BEGIN
+[0m14:37:53.627108 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:37:53.679806 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m14:37:53.681731 [debug] [ThreadPool]: Using postgres connection "list_aiesec_dw_silver"
+[0m14:37:53.683797 [debug] [ThreadPool]: On list_aiesec_dw_silver: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "aiesec_tunisia", "target_name": "dev", "connection_name": "list_aiesec_dw_silver"} */
+select
+      'aiesec_dw' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'silver'
+    union all
+    select
+      'aiesec_dw' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'silver'
+    union all
+    select
+      'aiesec_dw' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'silver'
+  
+[0m14:37:53.689084 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.0 seconds
+[0m14:37:53.692309 [debug] [ThreadPool]: On list_aiesec_dw_silver: ROLLBACK
+[0m14:37:53.694553 [debug] [ThreadPool]: On list_aiesec_dw_silver: Close
+[0m14:37:53.702325 [debug] [MainThread]: Using postgres connection "master"
+[0m14:37:53.703944 [debug] [MainThread]: On master: BEGIN
+[0m14:37:53.705390 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:37:53.715835 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m14:37:53.718791 [debug] [MainThread]: Using postgres connection "master"
+[0m14:37:53.720871 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "aiesec_tunisia", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m14:37:53.752911 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m14:37:53.756284 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ae8ae0aa-7850-478d-8456-7f9694f5f92b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb8a8d9a350>]}
+[0m14:37:53.758544 [debug] [MainThread]: On master: ROLLBACK
+[0m14:37:53.760934 [debug] [MainThread]: On master: Close
+[0m14:37:53.762796 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m14:37:53.764388 [info ] [MainThread]: 
+[0m14:37:53.780873 [debug] [Thread-1 (]: Began running node model.aiesec_tunisia.performance
+[0m14:37:53.783406 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_aiesec_dw_silver, now model.aiesec_tunisia.performance)
+[0m14:37:53.785162 [debug] [Thread-1 (]: Began compiling node model.aiesec_tunisia.performance
+[0m14:37:53.804843 [debug] [Thread-1 (]: Writing injected SQL for node "model.aiesec_tunisia.performance"
+[0m14:37:53.818186 [debug] [Thread-1 (]: Began executing node model.aiesec_tunisia.performance
+[0m14:37:53.820012 [debug] [Thread-1 (]: Finished running node model.aiesec_tunisia.performance
+[0m14:37:53.822334 [debug] [Thread-3 (]: Began running node test.aiesec_tunisia.accepted_values_performance_stage__sign_ups__applicants__accepted__approved__realized__finished__completed.daa2e8cbe5
+[0m14:37:53.822958 [debug] [Thread-4 (]: Began running node test.aiesec_tunisia.not_null_performance_bronze_id.cb0535f776
+[0m14:37:53.823735 [debug] [Thread-2 (]: Began running node test.aiesec_tunisia.not_null_performance_stage.2333e5234b
+[0m14:37:53.824639 [debug] [Thread-1 (]: Began running node test.aiesec_tunisia.not_null_performance_value.b8dc874f8e
+[0m14:37:53.826633 [debug] [Thread-3 (]: Acquiring new postgres connection 'test.aiesec_tunisia.accepted_values_performance_stage__sign_ups__applicants__accepted__approved__realized__finished__completed.daa2e8cbe5'
+[0m14:37:53.828766 [debug] [Thread-4 (]: Acquiring new postgres connection 'test.aiesec_tunisia.not_null_performance_bronze_id.cb0535f776'
+[0m14:37:53.830783 [debug] [Thread-2 (]: Acquiring new postgres connection 'test.aiesec_tunisia.not_null_performance_stage.2333e5234b'
+[0m14:37:53.833040 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.aiesec_tunisia.performance, now test.aiesec_tunisia.not_null_performance_value.b8dc874f8e)
+[0m14:37:53.835064 [debug] [Thread-3 (]: Began compiling node test.aiesec_tunisia.accepted_values_performance_stage__sign_ups__applicants__accepted__approved__realized__finished__completed.daa2e8cbe5
+[0m14:37:53.836687 [debug] [Thread-4 (]: Began compiling node test.aiesec_tunisia.not_null_performance_bronze_id.cb0535f776
+[0m14:37:53.838144 [debug] [Thread-2 (]: Began compiling node test.aiesec_tunisia.not_null_performance_stage.2333e5234b
+[0m14:37:53.839533 [debug] [Thread-1 (]: Began compiling node test.aiesec_tunisia.not_null_performance_value.b8dc874f8e
+[0m14:37:53.847172 [debug] [Thread-3 (]: Writing injected SQL for node "test.aiesec_tunisia.accepted_values_performance_stage__sign_ups__applicants__accepted__approved__realized__finished__completed.daa2e8cbe5"
+[0m14:37:53.861432 [debug] [Thread-4 (]: Writing injected SQL for node "test.aiesec_tunisia.not_null_performance_bronze_id.cb0535f776"
+[0m14:37:53.868435 [debug] [Thread-2 (]: Writing injected SQL for node "test.aiesec_tunisia.not_null_performance_stage.2333e5234b"
+[0m14:37:53.874403 [debug] [Thread-1 (]: Writing injected SQL for node "test.aiesec_tunisia.not_null_performance_value.b8dc874f8e"
+[0m14:37:53.888866 [debug] [Thread-3 (]: Began executing node test.aiesec_tunisia.accepted_values_performance_stage__sign_ups__applicants__accepted__approved__realized__finished__completed.daa2e8cbe5
+[0m14:37:53.891599 [debug] [Thread-3 (]: Finished running node test.aiesec_tunisia.accepted_values_performance_stage__sign_ups__applicants__accepted__approved__realized__finished__completed.daa2e8cbe5
+[0m14:37:53.892613 [debug] [Thread-2 (]: Began executing node test.aiesec_tunisia.not_null_performance_stage.2333e5234b
+[0m14:37:53.895410 [debug] [Thread-1 (]: Began executing node test.aiesec_tunisia.not_null_performance_value.b8dc874f8e
+[0m14:37:53.896412 [debug] [Thread-4 (]: Began executing node test.aiesec_tunisia.not_null_performance_bronze_id.cb0535f776
+[0m14:37:53.898203 [debug] [Thread-2 (]: Finished running node test.aiesec_tunisia.not_null_performance_stage.2333e5234b
+[0m14:37:53.900946 [debug] [Thread-1 (]: Finished running node test.aiesec_tunisia.not_null_performance_value.b8dc874f8e
+[0m14:37:53.903277 [debug] [Thread-4 (]: Finished running node test.aiesec_tunisia.not_null_performance_bronze_id.cb0535f776
+[0m14:37:53.909458 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:37:53.911590 [debug] [MainThread]: Connection 'test.aiesec_tunisia.not_null_performance_value.b8dc874f8e' was properly closed.
+[0m14:37:53.913313 [debug] [MainThread]: Connection 'test.aiesec_tunisia.accepted_values_performance_stage__sign_ups__applicants__accepted__approved__realized__finished__completed.daa2e8cbe5' was properly closed.
+[0m14:37:53.915226 [debug] [MainThread]: Connection 'test.aiesec_tunisia.not_null_performance_bronze_id.cb0535f776' was properly closed.
+[0m14:37:53.916765 [debug] [MainThread]: Connection 'test.aiesec_tunisia.not_null_performance_stage.2333e5234b' was properly closed.
+[0m14:37:53.919630 [debug] [MainThread]: Command end result
+[0m14:37:54.055628 [debug] [MainThread]: Excluded node 'accepted_values_performance_stage__sign_ups__applicants__accepted__approved__realized__finished__completed' from results
+[0m14:37:54.057685 [debug] [MainThread]: Excluded node 'not_null_performance_stage' from results
+[0m14:37:54.060003 [debug] [MainThread]: Excluded node 'not_null_performance_value' from results
+[0m14:37:54.061717 [debug] [MainThread]: Excluded node 'not_null_performance_bronze_id' from results
+[0m14:37:54.065040 [info ] [MainThread]: Compiled node 'performance' is:
+
+
+
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+with source as (
+    select * from "aiesec_dw"."bronze"."raw_performance"
+)
+
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'sign_ups' as stage,
+    'total'    as program,
+    cast(su_total as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'sign_ups' as stage,
+    'ogv'    as program,
+    cast(su_ogv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'sign_ups' as stage,
+    'ogta'    as program,
+    cast(su_ogta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'sign_ups' as stage,
+    'ogte'    as program,
+    cast(su_ogte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'applicants' as stage,
+    'total'    as program,
+    cast(ap_total as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'applicants' as stage,
+    'igv'    as program,
+    cast(ap_igv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'applicants' as stage,
+    'igta'    as program,
+    cast(ap_igta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'applicants' as stage,
+    'igte'    as program,
+    cast(ap_igte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'applicants' as stage,
+    'ogv'    as program,
+    cast(ap_ogv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'applicants' as stage,
+    'ogta'    as program,
+    cast(ap_ogta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'applicants' as stage,
+    'ogte'    as program,
+    cast(ap_ogte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'accepted' as stage,
+    'total'    as program,
+    cast(ac_total as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'accepted' as stage,
+    'igv'    as program,
+    cast(ac_igv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'accepted' as stage,
+    'igta'    as program,
+    cast(ac_igta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'accepted' as stage,
+    'igte'    as program,
+    cast(ac_igte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'accepted' as stage,
+    'ogv'    as program,
+    cast(ac_ogv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'accepted' as stage,
+    'ogta'    as program,
+    cast(ac_ogta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'accepted' as stage,
+    'ogte'    as program,
+    cast(ac_ogte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'approved' as stage,
+    'total'    as program,
+    cast(av_total as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'approved' as stage,
+    'igv'    as program,
+    cast(av_igv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'approved' as stage,
+    'igta'    as program,
+    cast(av_igta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'approved' as stage,
+    'igte'    as program,
+    cast(av_igte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'approved' as stage,
+    'ogv'    as program,
+    cast(av_ogv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'approved' as stage,
+    'ogta'    as program,
+    cast(av_ogta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'approved' as stage,
+    'ogte'    as program,
+    cast(av_ogte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'realized' as stage,
+    'total'    as program,
+    cast(rl_total as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'realized' as stage,
+    'igv'    as program,
+    cast(rl_igv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'realized' as stage,
+    'igta'    as program,
+    cast(rl_igta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'realized' as stage,
+    'igte'    as program,
+    cast(rl_igte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'realized' as stage,
+    'ogv'    as program,
+    cast(rl_ogv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'realized' as stage,
+    'ogta'    as program,
+    cast(rl_ogta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'realized' as stage,
+    'ogte'    as program,
+    cast(rl_ogte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'finished' as stage,
+    'total'    as program,
+    cast(fn_total as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'finished' as stage,
+    'igv'    as program,
+    cast(fn_igv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'finished' as stage,
+    'igta'    as program,
+    cast(fn_igta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'finished' as stage,
+    'igte'    as program,
+    cast(fn_igte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'finished' as stage,
+    'ogv'    as program,
+    cast(fn_ogv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'finished' as stage,
+    'ogta'    as program,
+    cast(fn_ogta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'finished' as stage,
+    'ogte'    as program,
+    cast(fn_ogte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'completed' as stage,
+    'total'    as program,
+    cast(cp_total as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'completed' as stage,
+    'igv'    as program,
+    cast(cp_igv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'completed' as stage,
+    'igta'    as program,
+    cast(cp_igta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'completed' as stage,
+    'igte'    as program,
+    cast(cp_igte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'completed' as stage,
+    'ogv'    as program,
+    cast(cp_ogv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'completed' as stage,
+    'ogta'    as program,
+    cast(cp_ogta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'completed' as stage,
+    'ogte'    as program,
+    cast(cp_ogte as integer) as value
+from source
+
+
+[0m14:37:54.071637 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_success": true, "command_wall_clock_time": 2.267631, "process_user_time": 2.773496, "process_kernel_time": 0.149649, "process_mem_max_rss": "118588", "process_in_blocks": "8688", "process_out_blocks": "200"}
+[0m14:37:54.073867 [debug] [MainThread]: Command `dbt compile` succeeded at 14:37:54.073674 after 2.27 seconds
+[0m14:37:54.076212 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb8af4c8950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb8af6244d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb8af625450>]}
+[0m14:37:54.078108 [debug] [MainThread]: Flushing usage events
+[0m14:37:58.083121 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m14:38:23.006414 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9ba5187150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9ba525c110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9ba6534210>]}
+
+
+============================== 14:38:23.010427 | c8dbc8d9-e24a-460d-9591-b06e1bb4a029 ==============================
+[0m14:38:23.010427 [info ] [MainThread]: Running with dbt=1.8.3
+[0m14:38:23.012774 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/usr/app/dbt/logs', 'debug': 'False', 'profiles_dir': '/root/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run --select silver.performance', 'send_anonymous_usage_stats': 'True'}
+[0m14:38:23.216288 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c8dbc8d9-e24a-460d-9591-b06e1bb4a029', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9ba50d56d0>]}
+[0m14:38:23.280888 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c8dbc8d9-e24a-460d-9591-b06e1bb4a029', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9ba8e80d10>]}
+[0m14:38:23.283025 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m14:38:23.300361 [debug] [MainThread]: checksum: 30bd4080c2bc8dee5936f8f60083ffbe1c906859d0fd965607c2144031479456, vars: {}, profile: , target: , version: 1.8.3
+[0m14:38:23.555990 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:38:23.557932 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:38:23.564966 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.aiesec_tunisia.gold
+[0m14:38:23.625615 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c8dbc8d9-e24a-460d-9591-b06e1bb4a029', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9ba3816610>]}
+[0m14:38:23.788510 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c8dbc8d9-e24a-460d-9591-b06e1bb4a029', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9ba50d5e50>]}
+[0m14:38:23.790157 [info ] [MainThread]: Found 1 model, 4 data tests, 1 source, 415 macros
+[0m14:38:23.791856 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c8dbc8d9-e24a-460d-9591-b06e1bb4a029', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9ba5088f50>]}
+[0m14:38:23.795039 [info ] [MainThread]: 
+[0m14:38:23.797142 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m14:38:23.800173 [debug] [ThreadPool]: Acquiring new postgres connection 'list_aiesec_dw'
+[0m14:38:23.853728 [debug] [ThreadPool]: Using postgres connection "list_aiesec_dw"
+[0m14:38:23.855688 [debug] [ThreadPool]: On list_aiesec_dw: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "aiesec_tunisia", "target_name": "dev", "connection_name": "list_aiesec_dw"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m14:38:23.857363 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:38:23.868662 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.0 seconds
+[0m14:38:23.871488 [debug] [ThreadPool]: On list_aiesec_dw: Close
+[0m14:38:23.873730 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_aiesec_dw, now create_aiesec_dw_silver)
+[0m14:38:23.876234 [debug] [ThreadPool]: Creating schema "database: "aiesec_dw"
+schema: "silver"
+"
+[0m14:38:23.884030 [debug] [ThreadPool]: Using postgres connection "create_aiesec_dw_silver"
+[0m14:38:23.885966 [debug] [ThreadPool]: On create_aiesec_dw_silver: BEGIN
+[0m14:38:23.887522 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:38:23.897726 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m14:38:23.899797 [debug] [ThreadPool]: Using postgres connection "create_aiesec_dw_silver"
+[0m14:38:23.901671 [debug] [ThreadPool]: On create_aiesec_dw_silver: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "aiesec_tunisia", "target_name": "dev", "connection_name": "create_aiesec_dw_silver"} */
+create schema if not exists "silver"
+[0m14:38:23.904605 [debug] [ThreadPool]: SQL status: CREATE SCHEMA in 0.0 seconds
+[0m14:38:23.907808 [debug] [ThreadPool]: On create_aiesec_dw_silver: COMMIT
+[0m14:38:23.909634 [debug] [ThreadPool]: Using postgres connection "create_aiesec_dw_silver"
+[0m14:38:23.911361 [debug] [ThreadPool]: On create_aiesec_dw_silver: COMMIT
+[0m14:38:23.915372 [debug] [ThreadPool]: SQL status: COMMIT in 0.0 seconds
+[0m14:38:23.917217 [debug] [ThreadPool]: On create_aiesec_dw_silver: Close
+[0m14:38:23.920744 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_aiesec_dw_silver, now list_aiesec_dw_silver)
+[0m14:38:23.932076 [debug] [ThreadPool]: Using postgres connection "list_aiesec_dw_silver"
+[0m14:38:23.934003 [debug] [ThreadPool]: On list_aiesec_dw_silver: BEGIN
+[0m14:38:23.935754 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:38:23.946650 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m14:38:23.948546 [debug] [ThreadPool]: Using postgres connection "list_aiesec_dw_silver"
+[0m14:38:23.950682 [debug] [ThreadPool]: On list_aiesec_dw_silver: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "aiesec_tunisia", "target_name": "dev", "connection_name": "list_aiesec_dw_silver"} */
+select
+      'aiesec_dw' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'silver'
+    union all
+    select
+      'aiesec_dw' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'silver'
+    union all
+    select
+      'aiesec_dw' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'silver'
+  
+[0m14:38:23.955861 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.0 seconds
+[0m14:38:23.958509 [debug] [ThreadPool]: On list_aiesec_dw_silver: ROLLBACK
+[0m14:38:23.960108 [debug] [ThreadPool]: On list_aiesec_dw_silver: Close
+[0m14:38:23.967423 [debug] [MainThread]: Using postgres connection "master"
+[0m14:38:23.969153 [debug] [MainThread]: On master: BEGIN
+[0m14:38:23.970884 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:38:23.980663 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m14:38:23.982584 [debug] [MainThread]: Using postgres connection "master"
+[0m14:38:23.984712 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "aiesec_tunisia", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m14:38:24.016228 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m14:38:24.019044 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c8dbc8d9-e24a-460d-9591-b06e1bb4a029', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9ba3804ad0>]}
+[0m14:38:24.020744 [debug] [MainThread]: On master: ROLLBACK
+[0m14:38:24.022592 [debug] [MainThread]: Using postgres connection "master"
+[0m14:38:24.024097 [debug] [MainThread]: On master: BEGIN
+[0m14:38:24.026462 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m14:38:24.028251 [debug] [MainThread]: On master: COMMIT
+[0m14:38:24.029801 [debug] [MainThread]: Using postgres connection "master"
+[0m14:38:24.031732 [debug] [MainThread]: On master: COMMIT
+[0m14:38:24.033608 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m14:38:24.035191 [debug] [MainThread]: On master: Close
+[0m14:38:24.037216 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m14:38:24.039163 [info ] [MainThread]: 
+[0m14:38:24.046072 [debug] [Thread-1 (]: Began running node model.aiesec_tunisia.performance
+[0m14:38:24.048328 [info ] [Thread-1 (]: 1 of 1 START sql table model silver.performance ................................ [RUN]
+[0m14:38:24.050547 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_aiesec_dw_silver, now model.aiesec_tunisia.performance)
+[0m14:38:24.052374 [debug] [Thread-1 (]: Began compiling node model.aiesec_tunisia.performance
+[0m14:38:24.076507 [debug] [Thread-1 (]: Writing injected SQL for node "model.aiesec_tunisia.performance"
+[0m14:38:24.092995 [debug] [Thread-1 (]: Began executing node model.aiesec_tunisia.performance
+[0m14:38:24.157622 [debug] [Thread-1 (]: Writing runtime sql for node "model.aiesec_tunisia.performance"
+[0m14:38:24.170116 [debug] [Thread-1 (]: Using postgres connection "model.aiesec_tunisia.performance"
+[0m14:38:24.171581 [debug] [Thread-1 (]: On model.aiesec_tunisia.performance: BEGIN
+[0m14:38:24.172949 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:38:24.182603 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m14:38:24.184420 [debug] [Thread-1 (]: Using postgres connection "model.aiesec_tunisia.performance"
+[0m14:38:24.188328 [debug] [Thread-1 (]: On model.aiesec_tunisia.performance: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "aiesec_tunisia", "target_name": "dev", "node_id": "model.aiesec_tunisia.performance"} */
+
+  
+    
+
+  create  table "aiesec_dw"."silver"."performance__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+with source as (
+    select * from "aiesec_dw"."bronze"."raw_performance"
+)
+
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'sign_ups' as stage,
+    'total'    as program,
+    cast(su_total as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'sign_ups' as stage,
+    'ogv'    as program,
+    cast(su_ogv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'sign_ups' as stage,
+    'ogta'    as program,
+    cast(su_ogta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'sign_ups' as stage,
+    'ogte'    as program,
+    cast(su_ogte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'applicants' as stage,
+    'total'    as program,
+    cast(ap_total as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'applicants' as stage,
+    'igv'    as program,
+    cast(ap_igv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'applicants' as stage,
+    'igta'    as program,
+    cast(ap_igta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'applicants' as stage,
+    'igte'    as program,
+    cast(ap_igte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'applicants' as stage,
+    'ogv'    as program,
+    cast(ap_ogv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'applicants' as stage,
+    'ogta'    as program,
+    cast(ap_ogta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'applicants' as stage,
+    'ogte'    as program,
+    cast(ap_ogte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'accepted' as stage,
+    'total'    as program,
+    cast(ac_total as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'accepted' as stage,
+    'igv'    as program,
+    cast(ac_igv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'accepted' as stage,
+    'igta'    as program,
+    cast(ac_igta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'accepted' as stage,
+    'igte'    as program,
+    cast(ac_igte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'accepted' as stage,
+    'ogv'    as program,
+    cast(ac_ogv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'accepted' as stage,
+    'ogta'    as program,
+    cast(ac_ogta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'accepted' as stage,
+    'ogte'    as program,
+    cast(ac_ogte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'approved' as stage,
+    'total'    as program,
+    cast(av_total as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'approved' as stage,
+    'igv'    as program,
+    cast(av_igv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'approved' as stage,
+    'igta'    as program,
+    cast(av_igta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'approved' as stage,
+    'igte'    as program,
+    cast(av_igte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'approved' as stage,
+    'ogv'    as program,
+    cast(av_ogv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'approved' as stage,
+    'ogta'    as program,
+    cast(av_ogta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'approved' as stage,
+    'ogte'    as program,
+    cast(av_ogte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'realized' as stage,
+    'total'    as program,
+    cast(rl_total as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'realized' as stage,
+    'igv'    as program,
+    cast(rl_igv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'realized' as stage,
+    'igta'    as program,
+    cast(rl_igta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'realized' as stage,
+    'igte'    as program,
+    cast(rl_igte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'realized' as stage,
+    'ogv'    as program,
+    cast(rl_ogv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'realized' as stage,
+    'ogta'    as program,
+    cast(rl_ogta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'realized' as stage,
+    'ogte'    as program,
+    cast(rl_ogte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'finished' as stage,
+    'total'    as program,
+    cast(fn_total as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'finished' as stage,
+    'igv'    as program,
+    cast(fn_igv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'finished' as stage,
+    'igta'    as program,
+    cast(fn_igta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'finished' as stage,
+    'igte'    as program,
+    cast(fn_igte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'finished' as stage,
+    'ogv'    as program,
+    cast(fn_ogv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'finished' as stage,
+    'ogta'    as program,
+    cast(fn_ogta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'finished' as stage,
+    'ogte'    as program,
+    cast(fn_ogte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'completed' as stage,
+    'total'    as program,
+    cast(cp_total as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'completed' as stage,
+    'igv'    as program,
+    cast(cp_igv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'completed' as stage,
+    'igta'    as program,
+    cast(cp_igta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'completed' as stage,
+    'igte'    as program,
+    cast(cp_igte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'completed' as stage,
+    'ogv'    as program,
+    cast(cp_ogv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'completed' as stage,
+    'ogta'    as program,
+    cast(cp_ogta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'completed' as stage,
+    'ogte'    as program,
+    cast(cp_ogte as integer) as value
+from source
+
+
+  );
+  
+[0m14:38:24.203087 [debug] [Thread-1 (]: SQL status: SELECT 644 in 0.0 seconds
+[0m14:38:24.213237 [debug] [Thread-1 (]: Using postgres connection "model.aiesec_tunisia.performance"
+[0m14:38:24.215337 [debug] [Thread-1 (]: On model.aiesec_tunisia.performance: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "aiesec_tunisia", "target_name": "dev", "node_id": "model.aiesec_tunisia.performance"} */
+alter table "aiesec_dw"."silver"."performance__dbt_tmp" rename to "performance"
+[0m14:38:24.217815 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m14:38:24.244618 [debug] [Thread-1 (]: On model.aiesec_tunisia.performance: COMMIT
+[0m14:38:24.246590 [debug] [Thread-1 (]: Using postgres connection "model.aiesec_tunisia.performance"
+[0m14:38:24.248390 [debug] [Thread-1 (]: On model.aiesec_tunisia.performance: COMMIT
+[0m14:38:24.253674 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m14:38:24.263026 [debug] [Thread-1 (]: Applying DROP to: "aiesec_dw"."silver"."performance__dbt_backup"
+[0m14:38:24.270325 [debug] [Thread-1 (]: Using postgres connection "model.aiesec_tunisia.performance"
+[0m14:38:24.272131 [debug] [Thread-1 (]: On model.aiesec_tunisia.performance: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "aiesec_tunisia", "target_name": "dev", "node_id": "model.aiesec_tunisia.performance"} */
+drop table if exists "aiesec_dw"."silver"."performance__dbt_backup" cascade
+[0m14:38:24.274530 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m14:38:24.278745 [debug] [Thread-1 (]: On model.aiesec_tunisia.performance: Close
+[0m14:38:24.281802 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c8dbc8d9-e24a-460d-9591-b06e1bb4a029', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9ba2ad5490>]}
+[0m14:38:24.284137 [info ] [Thread-1 (]: 1 of 1 OK created sql table model silver.performance ........................... [[32mSELECT 644[0m in 0.23s]
+[0m14:38:24.286612 [debug] [Thread-1 (]: Finished running node model.aiesec_tunisia.performance
+[0m14:38:24.290492 [debug] [MainThread]: Using postgres connection "master"
+[0m14:38:24.291772 [debug] [MainThread]: On master: BEGIN
+[0m14:38:24.293103 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:38:24.303533 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m14:38:24.305503 [debug] [MainThread]: On master: COMMIT
+[0m14:38:24.307196 [debug] [MainThread]: Using postgres connection "master"
+[0m14:38:24.308865 [debug] [MainThread]: On master: COMMIT
+[0m14:38:24.311615 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m14:38:24.313374 [debug] [MainThread]: On master: Close
+[0m14:38:24.315381 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:38:24.317460 [debug] [MainThread]: Connection 'model.aiesec_tunisia.performance' was properly closed.
+[0m14:38:24.318989 [info ] [MainThread]: 
+[0m14:38:24.320581 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 0.52 seconds (0.52s).
+[0m14:38:24.324132 [debug] [MainThread]: Command end result
+[0m14:38:24.399841 [info ] [MainThread]: 
+[0m14:38:24.401780 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:38:24.403403 [info ] [MainThread]: 
+[0m14:38:24.405326 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m14:38:24.408431 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.486973, "process_user_time": 2.344909, "process_kernel_time": 0.147788, "process_mem_max_rss": "112724", "process_in_blocks": "64", "process_out_blocks": "0"}
+[0m14:38:24.410700 [debug] [MainThread]: Command `dbt run` succeeded at 14:38:24.410533 after 1.49 seconds
+[0m14:38:24.412664 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9ba51b7fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9ba54ccdd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9ba9052710>]}
+[0m14:38:24.414553 [debug] [MainThread]: Flushing usage events
+[0m14:38:28.420609 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.

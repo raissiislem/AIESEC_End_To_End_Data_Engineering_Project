@@ -1,0 +1,14 @@
+name: 'aiesec_tunisia'
+version: '1.0.0'
+profile: 'aiesec_tunisia'
+
+model-paths: ["models"]
+macro-paths: ["macros"]
+test-paths: ["tests"]
+
+models:
+  aiesec_tunisia:
+    silver:
+      +materialized: table
+    gold:
+      +materialized: table
