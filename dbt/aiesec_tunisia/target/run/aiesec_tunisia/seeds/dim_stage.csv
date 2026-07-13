@@ -1,0 +1,14 @@
+
+    
+    
+    
+    create table "aiesec_dw"."silver"."dim_stage" ("stage_name" text,"stage_order" integer)
+  ;
+    -- dbt seed --
+    
+          insert into "aiesec_dw"."silver"."dim_stage" ("stage_name", "stage_order") values
+          (%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s)
+      
+
+;
+  

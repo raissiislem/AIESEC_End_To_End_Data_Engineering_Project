@@ -1,0 +1,12 @@
+
+    
+    
+    truncate table "aiesec_dw"."silver"."direction_lookup";
+    -- dbt seed --
+    
+          insert into "aiesec_dw"."silver"."direction_lookup" ("direction_code", "direction_name") values
+          (%s,%s),(%s,%s),(%s,%s)
+      
+
+;
+  
