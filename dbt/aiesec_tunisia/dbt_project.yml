@@ -12,3 +12,4 @@ models:
       +materialized: table
     gold:
       +materialized: table
+      +schema: gold

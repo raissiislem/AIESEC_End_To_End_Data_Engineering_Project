@@ -1,9 +1,7 @@
 
     
     
-    
-    create table "aiesec_dw"."silver"."stage_lookup" ("stage_name" text,"stage_order" integer)
-  ;
+    truncate table "aiesec_dw"."silver"."stage_lookup";
     -- dbt seed --
     
           insert into "aiesec_dw"."silver"."stage_lookup" ("stage_name", "stage_order") values

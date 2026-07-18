@@ -1,16 +1,55 @@
 version: 2
 
 models:
-  - name: performance
+  - name: dim_lc
+    config:
+      contract:
+        enforced: true
     columns:
-      - name: bronze_id
-        tests:
+      - name: lc_key
+        data_type: integer
+        constraints:
+          - type: primary_key
+        data_tests:
+          - unique
           - not_null
-      - name: value
-        tests:
+      - name: lc_name
+        data_type: text
+
+  - name: dim_date
+    config:
+      contract:
+        enforced: true
+    columns:
+      - name: date_key
+        data_type: integer
+        constraints:
+          - type: primary_key
+        data_tests:
+          - unique
           - not_null
-      - name: stage
-        tests:
+      - name: date
+        data_type: date
+      - name: year
+        data_type: integer
+      - name: month
+        data_type: integer
+      - name: quarter
+        data_type: integer
+
+  - name: dim_stage
+    config:
+      contract:
+        enforced: true
+    columns:
+      - name: stage_key
+        data_type: integer
+        constraints:
+          - type: primary_key
+        data_tests:
+          - unique
           - not_null
-          - accepted_values:
-              values: ['sign_ups','applicants','accepted','approved','realized','finished','completed']
+      - name: stage_name
+        data_type: text
+      - name: stage_order
+        data_type: integer

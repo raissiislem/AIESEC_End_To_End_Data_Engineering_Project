@@ -2,7 +2,7 @@
   
     
 
-  create  table "aiesec_dw"."silver"."fact_performance__dbt_tmp"
+  create  table "aiesec_dw"."gold"."fact_performance__dbt_tmp"
   
   
     as
@@ -28,10 +28,10 @@ select
     perf.scraped_at
 from perf
 left join program_map                      pm   on perf.program = pm.program_code
-left join "aiesec_dw"."silver"."dim_lc"        lc   on perf.lc_name = lc.lc_name
-left join "aiesec_dw"."silver"."dim_date"      dt   on to_date(perf.period_start, 'MM/DD/YYYY') = dt.date
-left join "aiesec_dw"."silver"."dim_direction" dir  on pm.direction_code = dir.direction_code
-left join "aiesec_dw"."silver"."dim_product"   prod on pm.product_code = prod.product_code
-left join "aiesec_dw"."silver"."dim_stage"     stg  on perf.stage = stg.stage_name
+left join "aiesec_dw"."gold"."dim_lc"        lc   on perf.lc_name = lc.lc_name
+left join "aiesec_dw"."gold"."dim_date"      dt   on to_date(perf.period_start, 'MM/DD/YYYY') = dt.date
+left join "aiesec_dw"."gold"."dim_direction" dir  on pm.direction_code = dir.direction_code
+left join "aiesec_dw"."gold"."dim_product"   prod on pm.product_code = prod.product_code
+left join "aiesec_dw"."gold"."dim_stage"     stg  on perf.stage = stg.stage_name
   );
   

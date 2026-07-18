@@ -1,12 +1,16 @@
-with distinct_dates as (
-    select distinct to_date(period_start, 'MM/DD/YYYY') as date
-    from {{ ref('performance') }}
+with calendar as (
+    select
+        generate_series(
+            date '2023-01-01',
+            date '2026-12-01',
+            interval '1 month'
+        )::date as date
 )
 
 select
-    row_number() over (order by date) as date_key,
+    cast(row_number() over (order by date) as integer) as date_key,
     date,
-    extract(year from date)    as year,
-    extract(month from date)   as month,
-    extract(quarter from date) as quarter
-from distinct_dates
+    cast(extract(year from date)    as integer) as year,
+    cast(extract(month from date)   as integer) as month,
+    cast(extract(quarter from date) as integer) as quarter
+from calendar

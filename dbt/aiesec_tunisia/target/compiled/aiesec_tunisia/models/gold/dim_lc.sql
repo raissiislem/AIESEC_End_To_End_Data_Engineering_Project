@@ -4,6 +4,6 @@ with distinct_lc as (
 )
 
 select
-    row_number() over (order by lc_name) as lc_key,
+    cast(row_number() over (order by lc_name) as integer) as lc_key,
     lc_name
 from distinct_lc

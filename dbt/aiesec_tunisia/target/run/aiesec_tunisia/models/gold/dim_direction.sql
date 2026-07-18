@@ -2,7 +2,7 @@
   
     
 
-  create  table "aiesec_dw"."silver"."dim_direction__dbt_tmp"
+  create  table "aiesec_dw"."gold"."dim_direction__dbt_tmp"
   
   
     as

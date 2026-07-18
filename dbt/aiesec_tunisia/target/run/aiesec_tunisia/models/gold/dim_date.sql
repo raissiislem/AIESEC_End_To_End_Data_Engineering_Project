@@ -2,23 +2,44 @@
   
     
 
-  create  table "aiesec_dw"."silver"."dim_date__dbt_tmp"
+  create  table "aiesec_dw"."gold"."dim_date__dbt_tmp"
   
   
-    as
+    
   
   (
-    with distinct_dates as (
-    select distinct to_date(period_start, 'MM/DD/YYYY') as date
-    from "aiesec_dw"."silver"."performance"
+    date_key integer primary key,
+    date date,
+    year integer,
+    month integer,
+    quarter integer
+    
+    )
+ ;
+    insert into "aiesec_dw"."gold"."dim_date__dbt_tmp" (
+      date_key, date, year, month, quarter
+    )
+  
+  (
+    
+    select date_key, date, year, month, quarter
+    from (
+        with calendar as (
+    select
+        generate_series(
+            date '2023-01-01',
+            date '2026-12-01',
+            interval '1 month'
+        )::date as date
 )
 
 select
-    row_number() over (order by date) as date_key,
+    cast(row_number() over (order by date) as integer) as date_key,
     date,
-    extract(year from date)    as year,
-    extract(month from date)   as month,
-    extract(quarter from date) as quarter
-from distinct_dates
+    cast(extract(year from date)    as integer) as year,
+    cast(extract(month from date)   as integer) as month,
+    cast(extract(quarter from date) as integer) as quarter
+from calendar
+    ) as model_subq
   );
   
