@@ -1,0 +1,44 @@
+[2026-08-12T16:54:02.067+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-08-12T16:54:02.255+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: daily_scrape_and_load.dbt_run manual__2026-08-12T16:53:36.047299+00:00 [queued]>
+[2026-08-12T16:54:02.266+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: daily_scrape_and_load.dbt_run manual__2026-08-12T16:53:36.047299+00:00 [queued]>
+[2026-08-12T16:54:02.267+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 3
+[2026-08-12T16:54:02.284+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): dbt_run> on 2026-08-12 16:53:36.047299+00:00
+[2026-08-12T16:54:02.296+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'daily_scrape_and_load', 'dbt_run', 'manual__2026-08-12T16:53:36.047299+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/daily_scrape_and_load.py', '--cfg-path', '/tmp/tmpusg62iln']
+[2026-08-12T16:54:02.299+0000] {standard_task_runner.py:91} INFO - Job 10: Subtask dbt_run
+[2026-08-12T16:54:02.300+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=407) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-08-12T16:54:02.301+0000] {standard_task_runner.py:63} INFO - Started process 411 to run task
+[2026-08-12T16:54:02.381+0000] {task_command.py:426} INFO - Running <TaskInstance: daily_scrape_and_load.dbt_run manual__2026-08-12T16:53:36.047299+00:00 [running]> on host d15eeec9050e
+[2026-08-12T16:54:02.494+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***_tunisia' AIRFLOW_CTX_DAG_ID='daily_scrape_and_load' AIRFLOW_CTX_TASK_ID='dbt_run' AIRFLOW_CTX_EXECUTION_DATE='2026-08-12T16:53:36.047299+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-08-12T16:53:36.047299+00:00'
+[2026-08-12T16:54:02.496+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-08-12T16:54:02.512+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-08-12T16:54:02.513+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'dbt run --project-dir /opt/airflow/dbt/***_tunisia --profiles-dir /opt/airflow/dbt_profiles']
+[2026-08-12T16:54:02.526+0000] {subprocess.py:86} INFO - Output:
+[2026-08-12T16:54:02.646+0000] {subprocess.py:93} INFO -   dbt-core 2.0.0-alpha.4
+[2026-08-12T16:54:02.699+0000] {subprocess.py:93} INFO -    Loading ../../dbt_profiles/profiles.yml
+[2026-08-12T16:54:02.976+0000] {subprocess.py:93} INFO - 
+[2026-08-12T16:54:02.976+0000] {subprocess.py:93} INFO - =================== Errors and Warnings ====================
+[2026-08-12T16:54:02.977+0000] {subprocess.py:93} INFO - [error] [InvalidConfig (dbt1005)]: Configuration Error: The 'postgres' adapter is not yet supported by dbt Fusion. Supported adapters: snowflake, bigquery, databricks, redshift, duckdb, salesforce. To use an experimental adapter, set the environment variable DBT_ALLOW_EXPERIMENTAL_ADAPTERS=true. Note that experimental adapters may be unstable and are not yet recommended for production use.
+[2026-08-12T16:54:02.977+0000] {subprocess.py:93} INFO - 
+[2026-08-12T16:54:02.978+0000] {subprocess.py:93} INFO - ==================== Execution Summary =====================
+[2026-08-12T16:54:02.979+0000] {subprocess.py:93} INFO - Finished 'run' with 1 error [335ms]
+[2026-08-12T16:54:02.985+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2026-08-12T16:54:02.986+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-08-12T16:54:03.000+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2026-08-12T16:54:03.008+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=daily_scrape_and_load, task_id=dbt_run, run_id=manual__2026-08-12T16:53:36.047299+00:00, execution_date=20260812T165336, start_date=20260812T165402, end_date=20260812T165403
+[2026-08-12T16:54:03.025+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 10 for task dbt_run (Bash command failed. The command returned a non-zero exit code 1.; 411)
+[2026-08-12T16:54:03.037+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2026-08-12T16:54:03.057+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-08-12T16:54:03.062+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

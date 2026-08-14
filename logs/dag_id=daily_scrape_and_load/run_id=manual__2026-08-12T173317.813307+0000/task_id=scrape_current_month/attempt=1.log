@@ -1,0 +1,20 @@
+[2026-08-12T17:33:21.663+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-08-12T17:33:22.231+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: daily_scrape_and_load.scrape_current_month manual__2026-08-12T17:33:17.813307+00:00 [queued]>
+[2026-08-12T17:33:22.258+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: daily_scrape_and_load.scrape_current_month manual__2026-08-12T17:33:17.813307+00:00 [queued]>
+[2026-08-12T17:33:22.259+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 3
+[2026-08-12T17:33:22.299+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): scrape_current_month> on 2026-08-12 17:33:17.813307+00:00
+[2026-08-12T17:33:22.345+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=207) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-08-12T17:33:22.340+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'daily_scrape_and_load', 'scrape_current_month', 'manual__2026-08-12T17:33:17.813307+00:00', '--job-id', '17', '--raw', '--subdir', 'DAGS_FOLDER/daily_scrape_and_load.py', '--cfg-path', '/tmp/tmpvscdig8_']
+[2026-08-12T17:33:22.348+0000] {standard_task_runner.py:63} INFO - Started process 209 to run task
+[2026-08-12T17:33:22.350+0000] {standard_task_runner.py:91} INFO - Job 17: Subtask scrape_current_month
+[2026-08-12T17:33:22.545+0000] {task_command.py:426} INFO - Running <TaskInstance: daily_scrape_and_load.scrape_current_month manual__2026-08-12T17:33:17.813307+00:00 [running]> on host 257838aa279f
+[2026-08-12T17:33:22.801+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***_tunisia' AIRFLOW_CTX_DAG_ID='daily_scrape_and_load' AIRFLOW_CTX_TASK_ID='scrape_current_month' AIRFLOW_CTX_EXECUTION_DATE='2026-08-12T17:33:17.813307+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-08-12T17:33:17.813307+00:00'
+[2026-08-12T17:33:22.804+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-08-12T17:33:22.894+0000] {logging_mixin.py:188} INFO - Scraping current month so far: 08/01/2026 to 08/12/2026
+[2026-08-12T17:33:43.296+0000] {logging_mixin.py:188} INFO - ✔ Saved data/raw/core_2026_08_current.csv (14 rows)
+[2026-08-12T17:33:43.300+0000] {python.py:237} INFO - Done. Returned value was: data/raw/core_2026_08_current.csv
+[2026-08-12T17:33:43.302+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-08-12T17:33:43.452+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=daily_scrape_and_load, task_id=scrape_current_month, run_id=manual__2026-08-12T17:33:17.813307+00:00, execution_date=20260812T173317, start_date=20260812T173322, end_date=20260812T173343
+[2026-08-12T17:33:43.569+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-08-12T17:33:43.633+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-08-12T17:33:43.638+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

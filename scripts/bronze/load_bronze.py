@@ -41,6 +41,14 @@ def load_file(cur, file_path):
     df = df.rename(columns=rename_map)
     df = df[final_columns]
 
+    # Prevent duplicate raw rows when the same month is reloaded or a backfill is rerun.
+    if "period_start" in df.columns and not df.empty:
+        period_start = df["period_start"].iloc[0]
+        cur.execute("DELETE FROM bronze.raw_performance WHERE period_start = %s", (period_start,))
+
+    # Drop any duplicate row within the same file before insert.
+    df = df.drop_duplicates(subset=["raw_lc_name", "period_start", "scrape_id"], keep="last")
+
     insert_query = f"""
         INSERT INTO bronze.raw_performance (
             {", ".join(final_columns)}

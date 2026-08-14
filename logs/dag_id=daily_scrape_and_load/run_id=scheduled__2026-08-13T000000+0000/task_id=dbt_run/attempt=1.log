@@ -1,0 +1,47 @@
+[2026-08-14T17:03:24.511+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-08-14T17:03:24.555+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: daily_scrape_and_load.dbt_run scheduled__2026-08-13T00:00:00+00:00 [queued]>
+[2026-08-14T17:03:24.567+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: daily_scrape_and_load.dbt_run scheduled__2026-08-13T00:00:00+00:00 [queued]>
+[2026-08-14T17:03:24.568+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 3
+[2026-08-14T17:03:24.585+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): dbt_run> on 2026-08-13 00:00:00+00:00
+[2026-08-14T17:03:24.597+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'daily_scrape_and_load', 'dbt_run', 'scheduled__2026-08-13T00:00:00+00:00', '--job-id', '28', '--raw', '--subdir', 'DAGS_FOLDER/daily_scrape_and_load.py', '--cfg-path', '/tmp/tmp8e602khe']
+[2026-08-14T17:03:24.602+0000] {standard_task_runner.py:91} INFO - Job 28: Subtask dbt_run
+[2026-08-14T17:03:24.602+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=176) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-08-14T17:03:24.603+0000] {standard_task_runner.py:63} INFO - Started process 178 to run task
+[2026-08-14T17:03:24.713+0000] {task_command.py:426} INFO - Running <TaskInstance: daily_scrape_and_load.dbt_run scheduled__2026-08-13T00:00:00+00:00 [running]> on host 257838aa279f
+[2026-08-14T17:03:24.864+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***_tunisia' AIRFLOW_CTX_DAG_ID='daily_scrape_and_load' AIRFLOW_CTX_TASK_ID='dbt_run' AIRFLOW_CTX_EXECUTION_DATE='2026-08-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-08-13T00:00:00+00:00'
+[2026-08-14T17:03:24.866+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-08-14T17:03:24.881+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-08-14T17:03:24.886+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'dbt run --project-dir /opt/airflow/dbt/***_tunisia --profiles-dir /opt/airflow/dbt_profiles']
+[2026-08-14T17:03:24.899+0000] {subprocess.py:86} INFO - Output:
+[2026-08-14T17:03:30.293+0000] {subprocess.py:93} INFO - [0m17:03:30  Running with dbt=1.8.8
+[2026-08-14T17:03:31.175+0000] {subprocess.py:93} INFO - [0m17:03:31  Registered adapter: postgres=1.8.2
+[2026-08-14T17:03:32.992+0000] {subprocess.py:93} INFO - [0m17:03:32  Found 7 models, 4 seeds, 6 data tests, 1 source, 424 macros
+[2026-08-14T17:03:32.999+0000] {subprocess.py:93} INFO - [0m17:03:32
+[2026-08-14T17:03:33.339+0000] {subprocess.py:93} INFO - [0m17:03:33  Concurrency: 4 threads (target='dev')
+[2026-08-14T17:03:33.341+0000] {subprocess.py:93} INFO - [0m17:03:33
+[2026-08-14T17:03:33.363+0000] {subprocess.py:93} INFO - [0m17:03:33  1 of 7 START sql table model gold.dim_date ..................................... [RUN]
+[2026-08-14T17:03:33.365+0000] {subprocess.py:93} INFO - [0m17:03:33  2 of 7 START sql table model gold.dim_direction ................................ [RUN]
+[2026-08-14T17:03:33.367+0000] {subprocess.py:93} INFO - [0m17:03:33  3 of 7 START sql table model gold.dim_product .................................. [RUN]
+[2026-08-14T17:03:33.369+0000] {subprocess.py:93} INFO - [0m17:03:33  4 of 7 START sql table model gold.dim_stage .................................... [RUN]
+[2026-08-14T17:03:34.102+0000] {subprocess.py:93} INFO - [0m17:03:34  2 of 7 OK created sql table model gold.dim_direction ........................... [[32mSELECT 3[0m in 0.72s]
+[2026-08-14T17:03:34.145+0000] {subprocess.py:93} INFO - [0m17:03:34  5 of 7 START sql table model silver.performance ................................ [RUN]
+[2026-08-14T17:03:34.153+0000] {subprocess.py:93} INFO - [0m17:03:34  3 of 7 OK created sql table model gold.dim_product ............................. [[32mSELECT 4[0m in 0.76s]
+[2026-08-14T17:03:34.258+0000] {subprocess.py:93} INFO - [0m17:03:34  1 of 7 OK created sql table model gold.dim_date ................................ [[32mINSERT 0 56[0m in 0.88s]
+[2026-08-14T17:03:34.261+0000] {subprocess.py:93} INFO - [0m17:03:34  4 of 7 OK created sql table model gold.dim_stage ............................... [[32mINSERT 0 7[0m in 0.88s]
+[2026-08-14T17:03:34.603+0000] {subprocess.py:93} INFO - [0m17:03:34  5 of 7 OK created sql table model silver.performance ........................... [[32mSELECT 28980[0m in 0.44s]
+[2026-08-14T17:03:34.614+0000] {subprocess.py:93} INFO - [0m17:03:34  6 of 7 START sql table model gold.dim_lc ....................................... [RUN]
+[2026-08-14T17:03:34.851+0000] {subprocess.py:93} INFO - [0m17:03:34  6 of 7 OK created sql table model gold.dim_lc .................................. [[32mINSERT 0 14[0m in 0.23s]
+[2026-08-14T17:03:34.860+0000] {subprocess.py:93} INFO - [0m17:03:34  7 of 7 START sql table model gold.fact_performance ............................. [RUN]
+[2026-08-14T17:03:36.600+0000] {subprocess.py:93} INFO - [0m17:03:36  7 of 7 OK created sql table model gold.fact_performance ........................ [[32mSELECT 28980[0m in 1.74s]
+[2026-08-14T17:03:36.642+0000] {subprocess.py:93} INFO - [0m17:03:36
+[2026-08-14T17:03:36.644+0000] {subprocess.py:93} INFO - [0m17:03:36  Finished running 7 table models in 0 hours 0 minutes and 3.64 seconds (3.64s).
+[2026-08-14T17:03:36.847+0000] {subprocess.py:93} INFO - [0m17:03:36
+[2026-08-14T17:03:36.848+0000] {subprocess.py:93} INFO - [0m17:03:36  [32mCompleted successfully[0m
+[2026-08-14T17:03:36.850+0000] {subprocess.py:93} INFO - [0m17:03:36
+[2026-08-14T17:03:36.852+0000] {subprocess.py:93} INFO - [0m17:03:36  Done. PASS=7 WARN=0 ERROR=0 SKIP=0 TOTAL=7
+[2026-08-14T17:03:37.938+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-08-14T17:03:37.940+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-08-14T17:03:37.991+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=daily_scrape_and_load, task_id=dbt_run, run_id=scheduled__2026-08-13T00:00:00+00:00, execution_date=20260813T000000, start_date=20260814T170324, end_date=20260814T170337
+[2026-08-14T17:03:38.028+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-08-14T17:03:38.052+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-08-14T17:03:38.056+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

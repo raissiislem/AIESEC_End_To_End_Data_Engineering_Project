@@ -28,7 +28,7 @@
     select
         generate_series(
             date '2023-01-01',
-            date '2026-12-01',
+            (date_trunc('month', current_date) + interval '12 months')::date,
             interval '1 month'
         )::date as date
 )

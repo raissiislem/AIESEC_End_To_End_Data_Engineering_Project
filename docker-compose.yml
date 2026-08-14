@@ -27,7 +27,9 @@ services:
       - pgadmin_data:/var/lib/pgadmin
 
   airflow-init:
-    image: apache/airflow:2.9.2
+    build:
+      context: .
+      dockerfile: airflow/Dockerfile
     container_name: airflow_init
     depends_on:
       - postgres
@@ -39,6 +41,7 @@ services:
       AIRFLOW_UID: ${AIRFLOW_UID}
     command: >
       bash -c "
+      
       airflow db migrate &&
       airflow users create
       --username ${AIRFLOW_ADMIN_USERNAME}
@@ -50,7 +53,9 @@ services:
       "
 
   airflow-webserver:
-    image: apache/airflow:2.9.2
+    build:
+      context: .
+      dockerfile: airflow/Dockerfile
     container_name: airflow_webserver
     depends_on:
       - airflow-init
@@ -67,10 +72,14 @@ services:
       - ./scripts:/opt/airflow/scripts
       - ./logs:/opt/airflow/logs
       - ./plugins:/opt/airflow/plugins
+      - ./dbt:/opt/airflow/dbt
+      - ./dbt_profiles:/opt/airflow/dbt_profiles
     command: webserver
 
   airflow-scheduler:
-    image: apache/airflow:2.9.2
+    build:
+      context: .
+      dockerfile: airflow/Dockerfile
     container_name: airflow_scheduler
     depends_on:
       - airflow-init
@@ -85,7 +94,10 @@ services:
       - ./scripts:/opt/airflow/scripts
       - ./logs:/opt/airflow/logs
       - ./plugins:/opt/airflow/plugins
+      - ./dbt:/opt/airflow/dbt
+      - ./dbt_profiles:/opt/airflow/dbt_profiles
     command: scheduler
+
   dbt:
     image: ghcr.io/dbt-labs/dbt-postgres:1.8.latest
     container_name: aiesec_dbt

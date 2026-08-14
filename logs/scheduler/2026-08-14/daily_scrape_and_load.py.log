@@ -1,0 +1,693 @@
+[2026-08-14T17:03:04.348+0000] {processor.py:161} INFO - Started process (PID=164) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:03:04.352+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:03:04.358+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:03:04.357+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:03:06.776+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:03:07.443+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:03:07.443+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:03:07.481+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:03:07.481+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-13 00:00:00+00:00, run_after=2026-08-14 00:00:00+00:00
+[2026-08-14T17:03:07.513+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 3.181 seconds
+[2026-08-14T17:03:37.721+0000] {processor.py:161} INFO - Started process (PID=193) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:03:37.723+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:03:37.725+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:03:37.724+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:03:38.460+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:03:38.499+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:03:38.499+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:03:38.527+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:03:38.527+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:03:38.552+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.838 seconds
+[2026-08-14T17:04:08.975+0000] {processor.py:161} INFO - Started process (PID=199) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:04:08.983+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:04:08.991+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:04:08.988+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:04:12.382+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:04:12.793+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:04:12.793+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:04:13.038+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:04:13.037+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:04:13.350+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 4.398 seconds
+[2026-08-14T17:04:43.667+0000] {processor.py:161} INFO - Started process (PID=205) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:04:43.669+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:04:43.672+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:04:43.671+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:04:45.105+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:04:45.178+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:04:45.178+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:04:45.233+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:04:45.233+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:04:45.270+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 1.626 seconds
+[2026-08-14T17:05:15.443+0000] {processor.py:161} INFO - Started process (PID=211) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:05:15.444+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:05:15.447+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:05:15.446+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:05:16.324+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:05:16.380+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:05:16.380+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:05:16.406+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:05:16.406+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:05:16.432+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 1.002 seconds
+[2026-08-14T17:05:46.716+0000] {processor.py:161} INFO - Started process (PID=217) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:05:46.717+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:05:46.719+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:05:46.718+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:05:47.362+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:05:47.636+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:05:47.636+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:05:47.671+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:05:47.671+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:05:47.707+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.999 seconds
+[2026-08-14T17:06:17.949+0000] {processor.py:161} INFO - Started process (PID=223) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:06:17.950+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:06:17.951+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:06:17.951+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:06:18.754+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:06:18.802+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:06:18.801+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:06:18.826+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:06:18.825+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:06:18.853+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.911 seconds
+[2026-08-14T17:06:49.218+0000] {processor.py:161} INFO - Started process (PID=229) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:06:49.219+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:06:49.221+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:06:49.220+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:06:50.612+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:06:50.739+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:06:50.739+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:06:50.836+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:06:50.835+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:06:50.926+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 1.722 seconds
+[2026-08-14T17:07:21.322+0000] {processor.py:161} INFO - Started process (PID=235) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:07:21.322+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:07:21.324+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:07:21.323+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:07:22.068+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:07:22.112+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:07:22.112+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:07:22.136+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:07:22.136+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:07:22.162+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.847 seconds
+[2026-08-14T17:07:52.431+0000] {processor.py:161} INFO - Started process (PID=241) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:07:52.432+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:07:52.434+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:07:52.433+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:07:53.490+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:07:53.542+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:07:53.541+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:07:53.584+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:07:53.584+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:07:53.615+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 1.191 seconds
+[2026-08-14T17:08:23.851+0000] {processor.py:161} INFO - Started process (PID=247) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:08:23.852+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:08:23.853+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:08:23.853+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:08:25.041+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:08:25.111+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:08:25.110+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:08:25.168+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:08:25.167+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:08:25.204+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 1.364 seconds
+[2026-08-14T17:08:55.331+0000] {processor.py:161} INFO - Started process (PID=253) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:08:55.332+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:08:55.334+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:08:55.333+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:08:55.932+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:08:56.186+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:08:56.186+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:08:56.214+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:08:56.214+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:08:56.238+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.917 seconds
+[2026-08-14T17:09:26.551+0000] {processor.py:161} INFO - Started process (PID=259) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:09:26.552+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:09:26.553+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:09:26.553+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:09:27.215+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:09:27.250+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:09:27.250+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:09:27.276+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:09:27.276+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:09:27.300+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.758 seconds
+[2026-08-14T17:09:57.548+0000] {processor.py:161} INFO - Started process (PID=265) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:09:57.548+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:09:57.550+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:09:57.549+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:09:58.217+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:09:58.255+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:09:58.255+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:09:58.281+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:09:58.281+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:09:58.312+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.771 seconds
+[2026-08-14T17:10:28.600+0000] {processor.py:161} INFO - Started process (PID=271) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:10:28.600+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:10:28.602+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:10:28.601+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:10:29.251+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:10:29.284+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:10:29.283+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:10:29.307+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:10:29.307+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:10:29.332+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.739 seconds
+[2026-08-14T17:10:59.538+0000] {processor.py:161} INFO - Started process (PID=277) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:10:59.539+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:10:59.540+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:10:59.539+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:11:00.181+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:11:00.216+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:11:00.216+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:11:00.244+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:11:00.244+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:11:00.270+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.740 seconds
+[2026-08-14T17:11:30.689+0000] {processor.py:161} INFO - Started process (PID=283) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:11:30.690+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:11:30.692+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:11:30.691+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:11:31.345+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:11:31.377+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:11:31.377+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:11:31.398+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:11:31.398+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:11:31.421+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.741 seconds
+[2026-08-14T17:12:01.834+0000] {processor.py:161} INFO - Started process (PID=289) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:12:01.835+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:12:01.836+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:12:01.836+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:12:02.378+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:12:02.604+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:12:02.604+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:12:02.630+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:12:02.629+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:12:02.661+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.835 seconds
+[2026-08-14T17:12:33.107+0000] {processor.py:161} INFO - Started process (PID=295) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:12:33.108+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:12:33.109+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:12:33.108+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:12:33.770+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:12:33.802+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:12:33.802+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:12:33.826+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:12:33.826+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:12:33.849+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.750 seconds
+[2026-08-14T17:13:03.938+0000] {processor.py:161} INFO - Started process (PID=301) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:13:03.938+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:13:03.940+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:13:03.939+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:13:04.679+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:13:04.715+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:13:04.714+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:13:04.738+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:13:04.738+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:13:04.765+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.835 seconds
+[2026-08-14T17:13:35.019+0000] {processor.py:161} INFO - Started process (PID=307) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:13:35.020+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:13:35.021+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:13:35.021+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:13:35.898+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:13:35.956+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:13:35.955+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:13:35.991+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:13:35.991+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:13:36.023+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 1.014 seconds
+[2026-08-14T17:14:06.362+0000] {processor.py:161} INFO - Started process (PID=313) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:14:06.363+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:14:06.365+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:14:06.364+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:14:07.006+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:14:07.041+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:14:07.041+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:14:07.066+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:14:07.066+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:14:07.090+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.737 seconds
+[2026-08-14T17:14:37.433+0000] {processor.py:161} INFO - Started process (PID=319) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:14:37.434+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:14:37.436+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:14:37.435+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:14:38.119+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:14:38.157+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:14:38.157+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:14:38.181+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:14:38.180+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:14:38.205+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.782 seconds
+[2026-08-14T17:15:08.581+0000] {processor.py:161} INFO - Started process (PID=325) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:15:08.582+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:15:08.583+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:15:08.582+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:15:09.195+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:15:09.242+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:15:09.242+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:15:09.266+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:15:09.265+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:15:09.288+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.715 seconds
+[2026-08-14T17:15:39.740+0000] {processor.py:161} INFO - Started process (PID=331) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:15:39.741+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:15:39.742+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:15:39.742+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:15:40.914+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:15:40.985+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:15:40.985+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:15:41.034+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:15:41.033+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:15:41.084+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 1.361 seconds
+[2026-08-14T17:16:11.446+0000] {processor.py:161} INFO - Started process (PID=337) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:16:11.447+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:16:11.449+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:16:11.448+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:16:12.074+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:16:12.106+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:16:12.106+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:16:12.129+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:16:12.128+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:16:12.153+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.715 seconds
+[2026-08-14T17:16:42.339+0000] {processor.py:161} INFO - Started process (PID=343) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:16:42.340+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:16:42.341+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:16:42.340+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:16:42.983+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:16:43.014+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:16:43.014+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:16:43.037+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:16:43.037+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:16:43.061+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.729 seconds
+[2026-08-14T17:17:13.445+0000] {processor.py:161} INFO - Started process (PID=349) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:17:13.446+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:17:13.447+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:17:13.447+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:17:14.113+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:17:14.143+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:17:14.143+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:17:14.167+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:17:14.166+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:17:14.190+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.751 seconds
+[2026-08-14T17:17:44.533+0000] {processor.py:161} INFO - Started process (PID=355) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:17:44.534+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:17:44.535+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:17:44.535+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:17:45.135+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:17:45.168+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:17:45.168+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:17:45.190+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:17:45.190+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:17:45.213+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.687 seconds
+[2026-08-14T17:18:15.497+0000] {processor.py:161} INFO - Started process (PID=361) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:18:15.498+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:18:15.500+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:18:15.499+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:18:16.418+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:18:16.503+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:18:16.502+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:18:16.561+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:18:16.561+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:18:16.590+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 1.102 seconds
+[2026-08-14T17:18:46.771+0000] {processor.py:161} INFO - Started process (PID=367) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:18:46.772+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:18:46.774+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:18:46.773+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:18:47.579+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:18:47.632+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:18:47.631+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:18:47.711+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:18:47.711+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:18:47.742+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.979 seconds
+[2026-08-14T17:19:18.066+0000] {processor.py:161} INFO - Started process (PID=373) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:19:18.067+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:19:18.069+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:19:18.068+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:19:19.018+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:19:19.071+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:19:19.070+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:19:19.098+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:19:19.097+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:19:19.122+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 1.065 seconds
+[2026-08-14T17:19:49.335+0000] {processor.py:161} INFO - Started process (PID=379) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:19:49.335+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:19:49.337+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:19:49.336+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:19:49.965+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:19:50.005+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:19:50.005+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:19:50.031+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:19:50.031+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:19:50.056+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.729 seconds
+[2026-08-14T17:20:20.468+0000] {processor.py:161} INFO - Started process (PID=385) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:20:20.469+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:20:20.470+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:20:20.470+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:20:21.086+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:20:21.119+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:20:21.119+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:20:21.142+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:20:21.142+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:20:21.167+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.706 seconds
+[2026-08-14T17:20:51.544+0000] {processor.py:161} INFO - Started process (PID=391) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:20:51.546+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:20:51.547+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:20:51.547+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:20:52.301+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:20:52.335+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:20:52.334+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:20:52.360+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:20:52.360+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:20:52.399+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.866 seconds
+[2026-08-14T17:21:22.787+0000] {processor.py:161} INFO - Started process (PID=397) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:21:22.788+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:21:22.789+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:21:22.788+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:21:23.420+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:21:23.454+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:21:23.454+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:21:23.478+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:21:23.477+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:21:23.501+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.721 seconds
+[2026-08-14T17:21:53.811+0000] {processor.py:161} INFO - Started process (PID=403) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:21:53.812+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:21:53.814+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:21:53.813+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:21:54.475+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:21:54.509+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:21:54.508+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:21:54.531+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:21:54.531+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:21:54.556+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.754 seconds
+[2026-08-14T17:22:24.795+0000] {processor.py:161} INFO - Started process (PID=409) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:22:24.796+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:22:24.797+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:22:24.797+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:22:25.485+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:22:25.517+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:22:25.517+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:22:25.540+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:22:25.540+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:22:25.564+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.775 seconds
+[2026-08-14T17:22:55.986+0000] {processor.py:161} INFO - Started process (PID=415) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:22:55.987+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:22:55.988+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:22:55.987+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:22:56.629+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:22:56.662+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:22:56.662+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:22:56.686+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:22:56.685+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:22:56.711+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.732 seconds
+[2026-08-14T17:23:27.107+0000] {processor.py:161} INFO - Started process (PID=421) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:23:27.108+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:23:27.109+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:23:27.109+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:23:27.758+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:23:27.791+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:23:27.791+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:23:27.815+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:23:27.815+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:23:27.840+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.741 seconds
+[2026-08-14T17:23:58.220+0000] {processor.py:161} INFO - Started process (PID=427) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:23:58.221+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:23:58.223+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:23:58.222+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:23:58.868+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:23:58.899+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:23:58.899+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:23:58.922+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:23:58.922+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:23:58.949+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.736 seconds
+[2026-08-14T17:24:29.277+0000] {processor.py:161} INFO - Started process (PID=433) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:24:29.278+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:24:29.279+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:24:29.278+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:24:29.951+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:24:29.983+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:24:29.983+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:24:30.007+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:24:30.006+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:24:30.032+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.762 seconds
+[2026-08-14T17:25:00.254+0000] {processor.py:161} INFO - Started process (PID=439) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:25:00.255+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:25:00.256+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:25:00.255+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:25:00.990+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:25:01.027+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:25:01.027+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:25:01.056+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:25:01.055+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:25:01.087+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.841 seconds
+[2026-08-14T17:25:31.429+0000] {processor.py:161} INFO - Started process (PID=445) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:25:31.429+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:25:31.431+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:25:31.430+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:25:32.187+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:25:32.222+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:25:32.221+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:25:32.250+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:25:32.250+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:25:32.276+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.855 seconds
+[2026-08-14T17:26:02.628+0000] {processor.py:161} INFO - Started process (PID=451) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:26:02.629+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:26:02.631+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:26:02.630+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:26:03.361+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:26:03.403+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:26:03.403+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:26:03.428+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:26:03.428+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:26:03.455+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.834 seconds
+[2026-08-14T17:26:33.903+0000] {processor.py:161} INFO - Started process (PID=457) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:26:33.905+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:26:33.908+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:26:33.907+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:26:35.425+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:26:35.680+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:26:35.679+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:26:35.820+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:26:35.818+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:26:35.891+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 2.016 seconds
+[2026-08-14T17:27:06.356+0000] {processor.py:161} INFO - Started process (PID=463) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:27:06.357+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:27:06.359+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:27:06.359+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:27:07.267+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:27:07.304+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:27:07.304+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:27:07.329+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:27:07.329+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:27:07.353+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 1.014 seconds
+[2026-08-14T17:27:37.713+0000] {processor.py:161} INFO - Started process (PID=469) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:27:37.715+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:27:37.717+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:27:37.717+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:27:38.519+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:27:38.557+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:27:38.557+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:27:38.585+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:27:38.585+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:27:38.612+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.907 seconds
+[2026-08-14T17:28:08.934+0000] {processor.py:161} INFO - Started process (PID=475) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:28:08.934+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:28:08.936+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:28:08.935+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:28:09.730+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:28:09.764+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:28:09.763+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:28:09.790+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:28:09.790+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:28:09.814+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.888 seconds
+[2026-08-14T17:28:40.166+0000] {processor.py:161} INFO - Started process (PID=481) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:28:40.167+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:28:40.168+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:28:40.167+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:28:40.864+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:28:40.906+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:28:40.905+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:28:40.934+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:28:40.934+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:28:40.960+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.803 seconds
+[2026-08-14T17:29:11.320+0000] {processor.py:161} INFO - Started process (PID=487) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:29:11.321+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:29:11.322+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:29:11.322+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:29:12.116+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:29:12.168+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:29:12.167+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:29:12.192+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:29:12.192+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:29:12.220+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.910 seconds
+[2026-08-14T17:29:42.525+0000] {processor.py:161} INFO - Started process (PID=493) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:29:42.526+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:29:42.528+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:29:42.527+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:29:43.402+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:29:43.439+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:29:43.439+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:29:43.463+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:29:43.463+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:29:43.490+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.978 seconds
+[2026-08-14T17:30:13.859+0000] {processor.py:161} INFO - Started process (PID=499) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:30:13.861+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:30:13.865+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:30:13.864+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:30:14.752+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:30:14.786+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:30:14.786+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:30:14.812+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:30:14.812+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:30:14.836+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.985 seconds
+[2026-08-14T17:30:45.139+0000] {processor.py:161} INFO - Started process (PID=505) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:30:45.140+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:30:45.141+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:30:45.140+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:30:45.939+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:30:45.985+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:30:45.984+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:30:46.010+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:30:46.010+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:30:46.057+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.927 seconds
+[2026-08-14T17:31:16.377+0000] {processor.py:161} INFO - Started process (PID=511) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:31:16.379+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:31:16.381+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:31:16.381+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:31:17.180+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:31:17.231+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:31:17.230+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:31:17.262+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:31:17.262+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:31:17.291+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.932 seconds
+[2026-08-14T17:31:47.855+0000] {processor.py:161} INFO - Started process (PID=517) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:31:47.857+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:31:47.861+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:31:47.860+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:31:49.699+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:31:49.786+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:31:49.785+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:31:49.847+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:31:49.847+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:31:49.904+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 2.073 seconds
+[2026-08-14T17:32:20.100+0000] {processor.py:161} INFO - Started process (PID=523) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:32:20.102+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:32:20.103+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:32:20.103+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:32:21.089+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:32:21.152+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:32:21.151+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:32:21.186+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:32:21.186+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:32:21.222+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 1.137 seconds
+[2026-08-14T17:32:51.356+0000] {processor.py:161} INFO - Started process (PID=529) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:32:51.357+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:32:51.358+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:32:51.358+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:32:52.026+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:32:52.058+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:32:52.058+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:32:52.081+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:32:52.081+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:32:52.108+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.760 seconds
+[2026-08-14T17:33:22.485+0000] {processor.py:161} INFO - Started process (PID=535) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:33:22.486+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:33:22.487+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:33:22.487+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:33:23.097+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:33:23.128+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:33:23.127+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:33:23.151+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:33:23.151+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:33:23.177+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.698 seconds
+[2026-08-14T17:33:53.502+0000] {processor.py:161} INFO - Started process (PID=541) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:33:53.503+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:33:53.504+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:33:53.504+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:33:54.121+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:33:54.152+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:33:54.152+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:33:54.175+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:33:54.175+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:33:54.197+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.703 seconds
+[2026-08-14T17:34:24.469+0000] {processor.py:161} INFO - Started process (PID=547) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:34:24.470+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:34:24.472+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:34:24.471+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:34:25.127+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:34:25.161+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:34:25.161+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:34:25.189+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:34:25.189+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:34:25.217+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.755 seconds
+[2026-08-14T17:34:55.559+0000] {processor.py:161} INFO - Started process (PID=553) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:34:55.561+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:34:55.563+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:34:55.562+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:34:56.595+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:34:56.644+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:34:56.644+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:34:56.681+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:34:56.680+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:34:56.722+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 1.178 seconds
+[2026-08-14T17:35:27.013+0000] {processor.py:161} INFO - Started process (PID=559) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:35:27.014+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:35:27.015+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:35:27.015+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:35:27.708+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:35:27.747+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:35:27.747+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:35:27.778+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:35:27.777+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:35:27.805+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.799 seconds
+[2026-08-14T17:35:58.197+0000] {processor.py:161} INFO - Started process (PID=565) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:35:58.199+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:35:58.210+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:35:58.200+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:36:01.467+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:36:01.570+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:36:01.570+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:36:01.623+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:36:01.622+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:36:01.661+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 3.492 seconds
+[2026-08-14T17:36:32.130+0000] {processor.py:161} INFO - Started process (PID=571) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:36:32.132+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:36:32.134+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:36:32.133+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:36:33.989+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:36:34.036+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:36:34.035+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:36:34.076+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:36:34.075+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:36:34.120+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 1.998 seconds
+[2026-08-14T17:37:04.394+0000] {processor.py:161} INFO - Started process (PID=577) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:37:04.395+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:37:04.396+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:37:04.396+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:37:05.163+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:37:05.217+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:37:05.216+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:37:05.251+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:37:05.250+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:37:05.278+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.891 seconds
+[2026-08-14T17:37:35.716+0000] {processor.py:161} INFO - Started process (PID=583) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:37:35.720+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:37:35.729+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:37:35.722+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:37:41.659+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:37:41.942+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:37:41.940+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:37:42.067+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:37:42.067+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:37:42.238+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 6.556 seconds
+[2026-08-14T17:38:12.934+0000] {processor.py:161} INFO - Started process (PID=589) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:38:12.936+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:38:12.939+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:38:12.938+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:38:14.220+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:38:14.270+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:38:14.269+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:38:14.301+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:38:14.301+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:38:14.336+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 1.429 seconds
+[2026-08-14T17:38:44.588+0000] {processor.py:161} INFO - Started process (PID=595) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:38:44.589+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:38:44.590+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:38:44.590+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:38:45.400+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:38:45.445+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:38:45.445+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:38:45.477+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:38:45.477+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:38:45.524+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.947 seconds
+[2026-08-14T17:39:15.678+0000] {processor.py:161} INFO - Started process (PID=601) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:39:15.679+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:39:15.681+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:39:15.681+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:39:16.535+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:39:16.581+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:39:16.581+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:39:16.605+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:39:16.605+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:39:16.630+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.972 seconds
+[2026-08-14T17:39:47.168+0000] {processor.py:161} INFO - Started process (PID=607) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:39:47.170+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:39:47.174+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:39:47.173+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:39:53.476+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:39:53.717+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:39:53.716+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:39:53.933+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:39:53.921+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:39:54.808+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 7.673 seconds
+[2026-08-14T17:40:25.413+0000] {processor.py:161} INFO - Started process (PID=613) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:40:25.415+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:40:25.419+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:40:25.417+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:40:26.541+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:40:26.580+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:40:26.579+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:40:26.605+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:40:26.604+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:40:26.629+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 1.240 seconds
+[2026-08-14T17:40:56.746+0000] {processor.py:161} INFO - Started process (PID=619) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:40:56.747+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:40:56.749+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:40:56.748+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:40:57.466+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:40:57.502+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:40:57.502+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:40:57.525+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:40:57.525+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:40:57.548+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.812 seconds
+[2026-08-14T17:41:27.939+0000] {processor.py:161} INFO - Started process (PID=625) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:41:27.940+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:41:27.941+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:41:27.940+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:41:28.592+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:41:28.625+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:41:28.625+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:41:28.648+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:41:28.648+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:41:28.673+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.743 seconds
+[2026-08-14T17:41:58.993+0000] {processor.py:161} INFO - Started process (PID=631) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:41:58.994+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:41:58.995+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:41:58.995+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:41:59.669+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:41:59.702+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:41:59.702+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:41:59.725+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:41:59.725+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:41:59.748+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.762 seconds
+[2026-08-14T17:42:30.079+0000] {processor.py:161} INFO - Started process (PID=637) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:42:30.079+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:42:30.081+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:42:30.080+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:42:30.753+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:42:30.791+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:42:30.790+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:42:30.816+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:42:30.816+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:42:30.839+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.784 seconds
+[2026-08-14T17:43:01.005+0000] {processor.py:161} INFO - Started process (PID=643) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:43:01.007+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:43:01.009+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:43:01.008+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:43:01.966+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:43:02.015+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:43:02.015+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:43:02.045+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:43:02.045+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:43:02.069+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 1.088 seconds
+[2026-08-14T17:43:32.320+0000] {processor.py:161} INFO - Started process (PID=649) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:43:32.321+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:43:32.322+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:43:32.321+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:43:32.961+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:43:32.999+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:43:32.998+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:43:33.025+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:43:33.024+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:43:33.049+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.737 seconds
+[2026-08-14T17:44:03.413+0000] {processor.py:161} INFO - Started process (PID=655) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:44:03.414+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:44:03.415+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:44:03.415+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:44:04.209+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:44:04.252+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:44:04.252+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:44:04.278+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:44:04.277+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:44:04.303+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.897 seconds
+[2026-08-14T17:44:34.654+0000] {processor.py:161} INFO - Started process (PID=661) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:44:34.655+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:44:34.657+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:44:34.656+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:44:35.338+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:44:35.371+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:44:35.371+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:44:35.395+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:44:35.394+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:44:35.418+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.771 seconds
+[2026-08-14T17:45:05.818+0000] {processor.py:161} INFO - Started process (PID=667) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:45:05.819+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:45:05.820+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:45:05.819+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:45:06.808+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:45:06.849+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:45:06.849+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:45:06.883+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:45:06.882+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:45:06.918+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 1.109 seconds
+[2026-08-14T17:45:37.361+0000] {processor.py:161} INFO - Started process (PID=673) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:45:37.363+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:45:37.365+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:45:37.364+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:45:38.170+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:45:38.205+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:45:38.205+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:45:38.229+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:45:38.229+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:45:38.252+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.902 seconds
+[2026-08-14T17:46:08.533+0000] {processor.py:161} INFO - Started process (PID=679) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:46:08.534+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:46:08.535+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:46:08.534+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:46:09.169+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:46:09.203+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:46:09.203+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:46:09.229+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:46:09.228+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:46:09.255+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.729 seconds
+[2026-08-14T17:46:39.657+0000] {processor.py:161} INFO - Started process (PID=685) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:46:39.658+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:46:39.659+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:46:39.659+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:46:40.344+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:46:40.377+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:46:40.377+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:46:40.401+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:46:40.401+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:46:40.425+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.775 seconds
+[2026-08-14T17:47:10.806+0000] {processor.py:161} INFO - Started process (PID=691) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:47:10.807+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:47:10.808+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:47:10.808+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:47:11.453+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:47:11.488+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:47:11.488+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:47:11.513+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:47:11.513+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:47:11.540+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.741 seconds
+[2026-08-14T17:47:41.857+0000] {processor.py:161} INFO - Started process (PID=697) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:47:41.858+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:47:41.859+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:47:41.858+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:47:42.487+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:47:42.519+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:47:42.519+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:47:42.541+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:47:42.541+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:47:42.564+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.714 seconds
+[2026-08-14T17:48:12.759+0000] {processor.py:161} INFO - Started process (PID=703) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:48:12.760+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:48:12.761+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:48:12.761+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:48:13.401+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:48:13.431+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:48:13.431+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:48:13.453+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:48:13.453+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:48:13.477+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.725 seconds
+[2026-08-14T17:48:43.884+0000] {processor.py:161} INFO - Started process (PID=709) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:48:43.885+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:48:43.886+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:48:43.886+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:48:44.481+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:48:44.514+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:48:44.514+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:48:44.538+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:48:44.538+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:48:44.562+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.685 seconds
+[2026-08-14T17:49:14.909+0000] {processor.py:161} INFO - Started process (PID=715) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:49:14.910+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:49:14.911+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:49:14.911+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:49:15.535+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:49:15.567+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:49:15.567+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:49:15.589+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:49:15.589+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:49:15.613+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.712 seconds
+[2026-08-14T17:49:45.928+0000] {processor.py:161} INFO - Started process (PID=721) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:49:45.929+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:49:45.930+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:49:45.930+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:49:46.519+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:49:46.550+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:49:46.550+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:49:46.573+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:49:46.573+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:49:46.596+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.676 seconds
+[2026-08-14T17:50:17.011+0000] {processor.py:161} INFO - Started process (PID=727) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:50:17.012+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:50:17.013+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:50:17.013+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:50:17.610+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:50:17.641+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:50:17.641+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:50:17.664+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:50:17.664+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:50:17.688+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.684 seconds
+[2026-08-14T17:50:48.083+0000] {processor.py:161} INFO - Started process (PID=733) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:50:48.084+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:50:48.085+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:50:48.085+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:50:48.709+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:50:48.740+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:50:48.740+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:50:48.763+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:50:48.763+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:50:48.791+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.714 seconds
+[2026-08-14T17:51:19.098+0000] {processor.py:161} INFO - Started process (PID=739) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:51:19.099+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:51:19.101+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:51:19.100+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:51:19.693+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:51:19.723+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:51:19.723+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:51:19.747+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:51:19.747+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:51:19.770+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.681 seconds
+[2026-08-14T17:51:50.170+0000] {processor.py:161} INFO - Started process (PID=745) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:51:50.171+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:51:50.173+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:51:50.172+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:51:50.838+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:51:50.870+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:51:50.870+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:51:50.897+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:51:50.897+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:51:50.922+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.760 seconds
+[2026-08-14T17:52:21.320+0000] {processor.py:161} INFO - Started process (PID=751) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:52:21.321+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:52:21.322+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:52:21.322+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:52:22.058+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:52:22.098+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:52:22.098+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:52:22.121+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:52:22.121+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:52:22.149+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.837 seconds
+[2026-08-14T17:52:52.503+0000] {processor.py:161} INFO - Started process (PID=757) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:52:52.504+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:52:52.505+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:52:52.505+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:52:53.120+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:52:53.152+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:52:53.152+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:52:53.174+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:52:53.174+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:52:53.198+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.702 seconds
+[2026-08-14T17:53:23.407+0000] {processor.py:161} INFO - Started process (PID=763) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:53:23.408+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:53:23.410+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:53:23.409+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:53:24.128+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:53:24.167+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:53:24.166+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:53:24.199+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:53:24.199+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:53:24.226+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.832 seconds
+[2026-08-14T17:53:54.552+0000] {processor.py:161} INFO - Started process (PID=769) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:53:54.553+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:53:54.554+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:53:54.554+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:53:55.227+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:53:55.271+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:53:55.271+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:53:55.324+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:53:55.324+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:53:55.381+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.837 seconds
+[2026-08-14T17:54:25.798+0000] {processor.py:161} INFO - Started process (PID=775) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:54:25.798+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-08-14T17:54:25.800+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:54:25.799+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:54:26.397+0000] {processor.py:840} INFO - DAG(s) 'daily_scrape_and_load' retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-08-14T17:54:26.429+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:54:26.429+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-14T17:54:26.453+0000] {logging_mixin.py:188} INFO - [2026-08-14T17:54:26.453+0000] {dag.py:3954} INFO - Setting next_dagrun for daily_scrape_and_load to 2026-08-14 00:00:00+00:00, run_after=2026-08-15 00:00:00+00:00
+[2026-08-14T17:54:26.477+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.687 seconds

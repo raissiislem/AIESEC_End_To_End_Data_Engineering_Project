@@ -31,6 +31,31 @@ CREATE TABLE IF NOT EXISTS bronze.raw_performance (
 );
 """
 
+def load_current_month_file(cur, file_path, metric_columns, final_columns, expected_cols):
+    df = pd.read_csv(file_path)
+    if len(df.columns) != expected_cols:
+        raise ValueError(f"Expected {expected_cols} columns, got {len(df.columns)}")
+
+    rename_map = {"1": "raw_lc_name"}
+    for i, name in enumerate(metric_columns):
+        rename_map[str(i + 2)] = name
+    df = df.rename(columns=rename_map)
+    df = df[final_columns]
+
+    period_start = df["period_start"].iloc[0]  # same for every row in this file
+
+    # Delete any existing rows for this exact period_start (this month's prior snapshot)
+    cur.execute("DELETE FROM bronze.raw_performance WHERE period_start = %s", (period_start,))
+
+    insert_query = f"""
+        INSERT INTO bronze.raw_performance ({", ".join(final_columns)})
+        VALUES ({", ".join(["%s"] * len(final_columns))})
+    """
+    for _, row in df.iterrows():
+        cur.execute(insert_query, tuple(row.values))
+
+    return len(df)
+
 def main():
     conn = psycopg2.connect(**DB_CONFIG)
     cur = conn.cursor()

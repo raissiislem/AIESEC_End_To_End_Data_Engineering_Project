@@ -1,0 +1,84 @@
+[2026-07-19T17:25:25.785+0000] {processor.py:161} INFO - Started process (PID=187) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-07-19T17:25:25.786+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-07-19T17:25:25.787+0000] {logging_mixin.py:188} INFO - [2026-07-19T17:25:25.787+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-07-19T17:25:26.728+0000] {logging_mixin.py:188} INFO - [2026-07-19T17:25:26.724+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/daily_scrape_and_load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_scrape_and_load.py", line 12, in <module>
+    from bronze.load_bronze import load_current_month_file, metric_columns, final_columns, expected_cols
+ImportError: cannot import name 'load_current_month_file' from 'bronze.load_bronze' (/opt/airflow/scripts/bronze/load_bronze.py)
+[2026-07-19T17:25:26.730+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-07-19T17:25:26.764+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 0.988 seconds
+[2026-07-19T17:25:57.029+0000] {processor.py:161} INFO - Started process (PID=193) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-07-19T17:25:57.030+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-07-19T17:25:57.031+0000] {logging_mixin.py:188} INFO - [2026-07-19T17:25:57.031+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-07-19T17:25:58.006+0000] {logging_mixin.py:188} INFO - [2026-07-19T17:25:58.001+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/daily_scrape_and_load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_scrape_and_load.py", line 12, in <module>
+    from bronze.load_bronze import load_current_month_file, metric_columns, final_columns, expected_cols
+ImportError: cannot import name 'load_current_month_file' from 'bronze.load_bronze' (/opt/airflow/scripts/bronze/load_bronze.py)
+[2026-07-19T17:25:58.007+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-07-19T17:25:58.046+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 1.023 seconds
+[2026-07-19T17:26:28.251+0000] {processor.py:161} INFO - Started process (PID=199) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-07-19T17:26:28.252+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-07-19T17:26:28.253+0000] {logging_mixin.py:188} INFO - [2026-07-19T17:26:28.253+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-07-19T17:26:29.278+0000] {logging_mixin.py:188} INFO - [2026-07-19T17:26:29.271+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/daily_scrape_and_load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_scrape_and_load.py", line 12, in <module>
+    from bronze.load_bronze import load_current_month_file, metric_columns, final_columns, expected_cols
+ImportError: cannot import name 'load_current_month_file' from 'bronze.load_bronze' (/opt/airflow/scripts/bronze/load_bronze.py)
+[2026-07-19T17:26:29.280+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-07-19T17:26:29.316+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 1.075 seconds
+[2026-07-19T17:26:59.480+0000] {processor.py:161} INFO - Started process (PID=205) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-07-19T17:26:59.481+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-07-19T17:26:59.484+0000] {logging_mixin.py:188} INFO - [2026-07-19T17:26:59.483+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-07-19T17:27:01.059+0000] {logging_mixin.py:188} INFO - [2026-07-19T17:27:01.052+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/daily_scrape_and_load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_scrape_and_load.py", line 12, in <module>
+    from bronze.load_bronze import load_current_month_file, metric_columns, final_columns, expected_cols
+ImportError: cannot import name 'load_current_month_file' from 'bronze.load_bronze' (/opt/airflow/scripts/bronze/load_bronze.py)
+[2026-07-19T17:27:01.061+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-07-19T17:27:01.106+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 1.637 seconds
+[2026-07-19T18:25:17.272+0000] {processor.py:161} INFO - Started process (PID=211) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-07-19T18:25:17.276+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-07-19T18:25:17.283+0000] {logging_mixin.py:188} INFO - [2026-07-19T18:25:17.280+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-07-19T18:25:21.107+0000] {logging_mixin.py:188} INFO - [2026-07-19T18:25:21.090+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/daily_scrape_and_load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_scrape_and_load.py", line 12, in <module>
+    from bronze.load_bronze import load_current_month_file, metric_columns, final_columns, expected_cols
+ImportError: cannot import name 'load_current_month_file' from 'bronze.load_bronze' (/opt/airflow/scripts/bronze/load_bronze.py)
+[2026-07-19T18:25:21.110+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-07-19T18:25:21.318+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 4.078 seconds
+[2026-07-19T18:25:51.653+0000] {processor.py:161} INFO - Started process (PID=217) to work on /opt/airflow/dags/daily_scrape_and_load.py
+[2026-07-19T18:25:51.655+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_scrape_and_load.py for tasks to queue
+[2026-07-19T18:25:51.657+0000] {logging_mixin.py:188} INFO - [2026-07-19T18:25:51.656+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-07-19T18:25:53.126+0000] {logging_mixin.py:188} INFO - [2026-07-19T18:25:53.118+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/daily_scrape_and_load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_scrape_and_load.py", line 12, in <module>
+    from bronze.load_bronze import load_current_month_file, metric_columns, final_columns, expected_cols
+ImportError: cannot import name 'load_current_month_file' from 'bronze.load_bronze' (/opt/airflow/scripts/bronze/load_bronze.py)
+[2026-07-19T18:25:53.128+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_scrape_and_load.py
+[2026-07-19T18:25:53.163+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_scrape_and_load.py took 1.527 seconds
