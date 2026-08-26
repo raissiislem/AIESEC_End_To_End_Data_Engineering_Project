@@ -1,11 +1,11 @@
 {% set stage_program_map = [
-    ('su', 'sign_ups',  ['total', 'ogv', 'ogta', 'ogte']),
-    ('ap', 'applicants', ['total', 'igv', 'igta', 'igte', 'ogv', 'ogta', 'ogte']),
-    ('ac', 'accepted',   ['total', 'igv', 'igta', 'igte', 'ogv', 'ogta', 'ogte']),
-    ('av', 'approved',   ['total', 'igv', 'igta', 'igte', 'ogv', 'ogta', 'ogte']),
-    ('rl', 'realized',   ['total', 'igv', 'igta', 'igte', 'ogv', 'ogta', 'ogte']),
-    ('fn', 'finished',   ['total', 'igv', 'igta', 'igte', 'ogv', 'ogta', 'ogte']),
-    ('cp', 'completed',  ['total', 'igv', 'igta', 'igte', 'ogv', 'ogta', 'ogte'])
+    ('su', 'sign_ups',  ['ogv', 'ogta', 'ogte']),
+    ('ap', 'applicants', ['igv', 'igta', 'igte', 'ogv', 'ogta', 'ogte']),
+    ('ac', 'accepted',   ['igv', 'igta', 'igte', 'ogv', 'ogta', 'ogte']),
+    ('av', 'approved',   ['igv', 'igta', 'igte', 'ogv', 'ogta', 'ogte']),
+    ('rl', 'realized',   ['igv', 'igta', 'igte', 'ogv', 'ogta', 'ogte']),
+    ('fn', 'finished',   ['igv', 'igta', 'igte', 'ogv', 'ogta', 'ogte']),
+    ('cp', 'completed',  ['igv', 'igta', 'igte', 'ogv', 'ogta', 'ogte'])
 ] %}
 
 {% set combos = [] %}

@@ -9,27 +9,7 @@
   
     
   
-    
-  
 
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-
-  
-    
   
     
   
@@ -57,6 +37,18 @@
   
     
   
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
     
   
 
@@ -73,8 +65,6 @@
   
     
   
-    
-  
 
   
     
@@ -89,11 +79,7 @@
   
     
   
-    
-  
 
-  
-    
   
     
   
@@ -113,19 +99,6 @@ with source as (
     select * from "aiesec_dw"."bronze"."raw_performance"
 )
 
-
-select
-    id              as bronze_id,
-    scrape_id,
-    period_start,
-    period_end,
-    scraped_at,
-    raw_lc_name     as lc_name,
-    'sign_ups' as stage,
-    'total'    as program,
-    cast(su_total as integer) as value
-from source
-union all
 
 select
     id              as bronze_id,
@@ -163,19 +136,6 @@ select
     'sign_ups' as stage,
     'ogte'    as program,
     cast(su_ogte as integer) as value
-from source
-union all
-
-select
-    id              as bronze_id,
-    scrape_id,
-    period_start,
-    period_end,
-    scraped_at,
-    raw_lc_name     as lc_name,
-    'applicants' as stage,
-    'total'    as program,
-    cast(ap_total as integer) as value
 from source
 union all
 
@@ -265,19 +225,6 @@ select
     scraped_at,
     raw_lc_name     as lc_name,
     'accepted' as stage,
-    'total'    as program,
-    cast(ac_total as integer) as value
-from source
-union all
-
-select
-    id              as bronze_id,
-    scrape_id,
-    period_start,
-    period_end,
-    scraped_at,
-    raw_lc_name     as lc_name,
-    'accepted' as stage,
     'igv'    as program,
     cast(ac_igv as integer) as value
 from source
@@ -345,19 +292,6 @@ select
     'accepted' as stage,
     'ogte'    as program,
     cast(ac_ogte as integer) as value
-from source
-union all
-
-select
-    id              as bronze_id,
-    scrape_id,
-    period_start,
-    period_end,
-    scraped_at,
-    raw_lc_name     as lc_name,
-    'approved' as stage,
-    'total'    as program,
-    cast(av_total as integer) as value
 from source
 union all
 
@@ -447,19 +381,6 @@ select
     scraped_at,
     raw_lc_name     as lc_name,
     'realized' as stage,
-    'total'    as program,
-    cast(rl_total as integer) as value
-from source
-union all
-
-select
-    id              as bronze_id,
-    scrape_id,
-    period_start,
-    period_end,
-    scraped_at,
-    raw_lc_name     as lc_name,
-    'realized' as stage,
     'igv'    as program,
     cast(rl_igv as integer) as value
 from source
@@ -538,19 +459,6 @@ select
     scraped_at,
     raw_lc_name     as lc_name,
     'finished' as stage,
-    'total'    as program,
-    cast(fn_total as integer) as value
-from source
-union all
-
-select
-    id              as bronze_id,
-    scrape_id,
-    period_start,
-    period_end,
-    scraped_at,
-    raw_lc_name     as lc_name,
-    'finished' as stage,
     'igv'    as program,
     cast(fn_igv as integer) as value
 from source
@@ -618,19 +526,6 @@ select
     'finished' as stage,
     'ogte'    as program,
     cast(fn_ogte as integer) as value
-from source
-union all
-
-select
-    id              as bronze_id,
-    scrape_id,
-    period_start,
-    period_end,
-    scraped_at,
-    raw_lc_name     as lc_name,
-    'completed' as stage,
-    'total'    as program,
-    cast(cp_total as integer) as value
 from source
 union all
 

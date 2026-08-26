@@ -1,0 +1,12 @@
+{
+  "name": "AIESEC Tunisia",
+  "dataColors": ["#037EF3","#FF6A39","#5CA8F2","#0854A0","#1AA7FF","#8EC4F7"],
+  "background": "#F2F5FA",
+  "foreground": "#0B1C2C",
+  "tableAccent": "#037EF3",
+  "textClasses": {
+    "label": { "fontFace": "Lato" },
+    "callout": { "fontFace": "Lato Black" },
+    "title": { "fontFace": "Lato Black" }
+  }
+}

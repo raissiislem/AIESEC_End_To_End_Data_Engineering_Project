@@ -21950,3 +21950,1047 @@ drop table if exists "aiesec_dw"."gold"."fact_performance__dbt_backup" cascade
 [0m17:31:49.588072 [debug] [MainThread]: Command `dbt run` succeeded at 17:31:49.587697 after 9.51 seconds
 [0m17:31:49.591955 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x789018864b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7890189e8890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7890189e91d0>]}
 [0m17:31:49.596505 [debug] [MainThread]: Flushing usage events
+[0m11:23:22.155875 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x700637faec50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x700638c02610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x700637ff71d0>]}
+
+
+============================== 11:23:22.174515 | 1a40590c-9564-4b49-aacb-688c92473dde ==============================
+[0m11:23:22.174515 [info ] [MainThread]: Running with dbt=1.8.3
+[0m11:23:22.177898 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/usr/app/dbt/logs', 'fail_fast': 'False', 'profiles_dir': '/root/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt run --select performance dim_product dim_direction fact_performance', 'send_anonymous_usage_stats': 'True'}
+[0m11:23:22.556674 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1a40590c-9564-4b49-aacb-688c92473dde', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x700637ee8c10>]}
+[0m11:23:22.741914 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1a40590c-9564-4b49-aacb-688c92473dde', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70063bcf0ad0>]}
+[0m11:23:22.744296 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m11:23:22.782423 [debug] [MainThread]: checksum: 30bd4080c2bc8dee5936f8f60083ffbe1c906859d0fd965607c2144031479456, vars: {}, profile: , target: , version: 1.8.3
+[0m11:23:23.468710 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 3 files changed.
+[0m11:23:23.471487 [debug] [MainThread]: Partial parsing: updated file: aiesec_tunisia://seeds/product_lookup.csv
+[0m11:23:23.472664 [debug] [MainThread]: Partial parsing: updated file: aiesec_tunisia://models/silver/performance.sql
+[0m11:23:23.473767 [debug] [MainThread]: Partial parsing: updated file: aiesec_tunisia://seeds/direction_lookup.csv
+[0m11:23:24.144768 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1a40590c-9564-4b49-aacb-688c92473dde', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7006363e0690>]}
+[0m11:23:24.468325 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1a40590c-9564-4b49-aacb-688c92473dde', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7006362f77d0>]}
+[0m11:23:24.471101 [info ] [MainThread]: Found 7 models, 4 seeds, 6 data tests, 1 source, 416 macros
+[0m11:23:24.473722 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1a40590c-9564-4b49-aacb-688c92473dde', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7006361b7390>]}
+[0m11:23:24.480742 [info ] [MainThread]: 
+[0m11:23:24.485528 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m11:23:24.499523 [debug] [ThreadPool]: Acquiring new postgres connection 'list_aiesec_dw'
+[0m11:23:24.502204 [debug] [ThreadPool]: Acquiring new postgres connection 'list_aiesec_dw'
+[0m11:23:24.845175 [debug] [ThreadPool]: Using postgres connection "list_aiesec_dw"
+[0m11:23:24.846557 [debug] [ThreadPool]: Using postgres connection "list_aiesec_dw"
+[0m11:23:24.866171 [debug] [ThreadPool]: On list_aiesec_dw: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "aiesec_tunisia", "target_name": "dev", "connection_name": "list_aiesec_dw"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m11:23:24.869230 [debug] [ThreadPool]: On list_aiesec_dw: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "aiesec_tunisia", "target_name": "dev", "connection_name": "list_aiesec_dw"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m11:23:24.871953 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:23:24.874489 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:23:25.056758 [debug] [ThreadPool]: SQL status: SELECT 8 in 0.0 seconds
+[0m11:23:25.057402 [debug] [ThreadPool]: SQL status: SELECT 8 in 0.0 seconds
+[0m11:23:25.060488 [debug] [ThreadPool]: On list_aiesec_dw: Close
+[0m11:23:25.064112 [debug] [ThreadPool]: On list_aiesec_dw: Close
+[0m11:23:25.071390 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_aiesec_dw, now list_aiesec_dw_gold)
+[0m11:23:25.072957 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_aiesec_dw, now list_aiesec_dw_silver)
+[0m11:23:25.089666 [debug] [ThreadPool]: Using postgres connection "list_aiesec_dw_gold"
+[0m11:23:25.095396 [debug] [ThreadPool]: Using postgres connection "list_aiesec_dw_silver"
+[0m11:23:25.097550 [debug] [ThreadPool]: On list_aiesec_dw_gold: BEGIN
+[0m11:23:25.099803 [debug] [ThreadPool]: On list_aiesec_dw_silver: BEGIN
+[0m11:23:25.101590 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:23:25.104001 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:23:25.136650 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m11:23:25.139193 [debug] [ThreadPool]: Using postgres connection "list_aiesec_dw_silver"
+[0m11:23:25.140269 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m11:23:25.142663 [debug] [ThreadPool]: On list_aiesec_dw_silver: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "aiesec_tunisia", "target_name": "dev", "connection_name": "list_aiesec_dw_silver"} */
+select
+      'aiesec_dw' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'silver'
+    union all
+    select
+      'aiesec_dw' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'silver'
+    union all
+    select
+      'aiesec_dw' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'silver'
+  
+[0m11:23:25.145388 [debug] [ThreadPool]: Using postgres connection "list_aiesec_dw_gold"
+[0m11:23:25.150157 [debug] [ThreadPool]: On list_aiesec_dw_gold: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "aiesec_tunisia", "target_name": "dev", "connection_name": "list_aiesec_dw_gold"} */
+select
+      'aiesec_dw' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'gold'
+    union all
+    select
+      'aiesec_dw' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'gold'
+    union all
+    select
+      'aiesec_dw' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'gold'
+  
+[0m11:23:25.205227 [debug] [ThreadPool]: SQL status: SELECT 7 in 0.0 seconds
+[0m11:23:25.206345 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.0 seconds
+[0m11:23:25.210915 [debug] [ThreadPool]: On list_aiesec_dw_gold: ROLLBACK
+[0m11:23:25.216163 [debug] [ThreadPool]: On list_aiesec_dw_silver: ROLLBACK
+[0m11:23:25.219123 [debug] [ThreadPool]: On list_aiesec_dw_gold: Close
+[0m11:23:25.221767 [debug] [ThreadPool]: On list_aiesec_dw_silver: Close
+[0m11:23:25.244037 [debug] [MainThread]: Using postgres connection "master"
+[0m11:23:25.246504 [debug] [MainThread]: On master: BEGIN
+[0m11:23:25.248606 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:23:25.269857 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m11:23:25.271763 [debug] [MainThread]: Using postgres connection "master"
+[0m11:23:25.273821 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "aiesec_tunisia", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m11:23:25.307800 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m11:23:25.311217 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1a40590c-9564-4b49-aacb-688c92473dde', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x700634d9ea10>]}
+[0m11:23:25.313274 [debug] [MainThread]: On master: ROLLBACK
+[0m11:23:25.315668 [debug] [MainThread]: Using postgres connection "master"
+[0m11:23:25.317824 [debug] [MainThread]: On master: BEGIN
+[0m11:23:25.320415 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m11:23:25.322288 [debug] [MainThread]: On master: COMMIT
+[0m11:23:25.324298 [debug] [MainThread]: Using postgres connection "master"
+[0m11:23:25.327269 [debug] [MainThread]: On master: COMMIT
+[0m11:23:25.329911 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m11:23:25.332234 [debug] [MainThread]: On master: Close
+[0m11:23:25.334668 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:23:25.337672 [info ] [MainThread]: 
+[0m11:23:25.355482 [debug] [Thread-1 (]: Began running node model.aiesec_tunisia.dim_direction
+[0m11:23:25.356942 [debug] [Thread-2 (]: Began running node model.aiesec_tunisia.dim_product
+[0m11:23:25.358203 [debug] [Thread-3 (]: Began running node model.aiesec_tunisia.performance
+[0m11:23:25.361137 [info ] [Thread-1 (]: 1 of 4 START sql table model gold.dim_direction ................................ [RUN]
+[0m11:23:25.364213 [info ] [Thread-2 (]: 2 of 4 START sql table model gold.dim_product .................................. [RUN]
+[0m11:23:25.367944 [info ] [Thread-3 (]: 3 of 4 START sql table model silver.performance ................................ [RUN]
+[0m11:23:25.373097 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_aiesec_dw_silver, now model.aiesec_tunisia.dim_direction)
+[0m11:23:25.376811 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_aiesec_dw_gold, now model.aiesec_tunisia.dim_product)
+[0m11:23:25.381043 [debug] [Thread-3 (]: Acquiring new postgres connection 'model.aiesec_tunisia.performance'
+[0m11:23:25.384013 [debug] [Thread-1 (]: Began compiling node model.aiesec_tunisia.dim_direction
+[0m11:23:25.386244 [debug] [Thread-2 (]: Began compiling node model.aiesec_tunisia.dim_product
+[0m11:23:25.388660 [debug] [Thread-3 (]: Began compiling node model.aiesec_tunisia.performance
+[0m11:23:25.422838 [debug] [Thread-1 (]: Writing injected SQL for node "model.aiesec_tunisia.dim_direction"
+[0m11:23:25.424399 [debug] [Thread-2 (]: Writing injected SQL for node "model.aiesec_tunisia.dim_product"
+[0m11:23:25.453338 [debug] [Thread-3 (]: Writing injected SQL for node "model.aiesec_tunisia.performance"
+[0m11:23:25.493649 [debug] [Thread-1 (]: Began executing node model.aiesec_tunisia.dim_direction
+[0m11:23:25.584858 [debug] [Thread-3 (]: Began executing node model.aiesec_tunisia.performance
+[0m11:23:25.593519 [debug] [Thread-1 (]: Writing runtime sql for node "model.aiesec_tunisia.dim_direction"
+[0m11:23:25.601520 [debug] [Thread-3 (]: Writing runtime sql for node "model.aiesec_tunisia.performance"
+[0m11:23:25.608153 [debug] [Thread-2 (]: Began executing node model.aiesec_tunisia.dim_product
+[0m11:23:25.616277 [debug] [Thread-2 (]: Writing runtime sql for node "model.aiesec_tunisia.dim_product"
+[0m11:23:25.620792 [debug] [Thread-3 (]: Using postgres connection "model.aiesec_tunisia.performance"
+[0m11:23:25.622266 [debug] [Thread-1 (]: Using postgres connection "model.aiesec_tunisia.dim_direction"
+[0m11:23:25.624775 [debug] [Thread-3 (]: On model.aiesec_tunisia.performance: BEGIN
+[0m11:23:25.627551 [debug] [Thread-1 (]: On model.aiesec_tunisia.dim_direction: BEGIN
+[0m11:23:25.630342 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m11:23:25.633285 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:23:25.634372 [debug] [Thread-2 (]: Using postgres connection "model.aiesec_tunisia.dim_product"
+[0m11:23:25.642658 [debug] [Thread-2 (]: On model.aiesec_tunisia.dim_product: BEGIN
+[0m11:23:25.645696 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m11:23:25.681017 [debug] [Thread-3 (]: SQL status: BEGIN in 0.0 seconds
+[0m11:23:25.684724 [debug] [Thread-3 (]: Using postgres connection "model.aiesec_tunisia.performance"
+[0m11:23:25.690849 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m11:23:25.694706 [debug] [Thread-3 (]: On model.aiesec_tunisia.performance: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "aiesec_tunisia", "target_name": "dev", "node_id": "model.aiesec_tunisia.performance"} */
+
+  
+    
+
+  create  table "aiesec_dw"."silver"."performance__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+
+
+  
+    
+  
+    
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+with source as (
+    select * from "aiesec_dw"."bronze"."raw_performance"
+)
+
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'sign_ups' as stage,
+    'ogv'    as program,
+    cast(su_ogv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'sign_ups' as stage,
+    'ogta'    as program,
+    cast(su_ogta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'sign_ups' as stage,
+    'ogte'    as program,
+    cast(su_ogte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'applicants' as stage,
+    'igv'    as program,
+    cast(ap_igv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'applicants' as stage,
+    'igta'    as program,
+    cast(ap_igta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'applicants' as stage,
+    'igte'    as program,
+    cast(ap_igte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'applicants' as stage,
+    'ogv'    as program,
+    cast(ap_ogv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'applicants' as stage,
+    'ogta'    as program,
+    cast(ap_ogta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'applicants' as stage,
+    'ogte'    as program,
+    cast(ap_ogte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'accepted' as stage,
+    'igv'    as program,
+    cast(ac_igv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'accepted' as stage,
+    'igta'    as program,
+    cast(ac_igta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'accepted' as stage,
+    'igte'    as program,
+    cast(ac_igte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'accepted' as stage,
+    'ogv'    as program,
+    cast(ac_ogv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'accepted' as stage,
+    'ogta'    as program,
+    cast(ac_ogta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'accepted' as stage,
+    'ogte'    as program,
+    cast(ac_ogte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'approved' as stage,
+    'igv'    as program,
+    cast(av_igv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'approved' as stage,
+    'igta'    as program,
+    cast(av_igta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'approved' as stage,
+    'igte'    as program,
+    cast(av_igte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'approved' as stage,
+    'ogv'    as program,
+    cast(av_ogv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'approved' as stage,
+    'ogta'    as program,
+    cast(av_ogta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'approved' as stage,
+    'ogte'    as program,
+    cast(av_ogte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'realized' as stage,
+    'igv'    as program,
+    cast(rl_igv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'realized' as stage,
+    'igta'    as program,
+    cast(rl_igta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'realized' as stage,
+    'igte'    as program,
+    cast(rl_igte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'realized' as stage,
+    'ogv'    as program,
+    cast(rl_ogv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'realized' as stage,
+    'ogta'    as program,
+    cast(rl_ogta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'realized' as stage,
+    'ogte'    as program,
+    cast(rl_ogte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'finished' as stage,
+    'igv'    as program,
+    cast(fn_igv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'finished' as stage,
+    'igta'    as program,
+    cast(fn_igta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'finished' as stage,
+    'igte'    as program,
+    cast(fn_igte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'finished' as stage,
+    'ogv'    as program,
+    cast(fn_ogv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'finished' as stage,
+    'ogta'    as program,
+    cast(fn_ogta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'finished' as stage,
+    'ogte'    as program,
+    cast(fn_ogte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'completed' as stage,
+    'igv'    as program,
+    cast(cp_igv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'completed' as stage,
+    'igta'    as program,
+    cast(cp_igta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'completed' as stage,
+    'igte'    as program,
+    cast(cp_igte as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'completed' as stage,
+    'ogv'    as program,
+    cast(cp_ogv as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'completed' as stage,
+    'ogta'    as program,
+    cast(cp_ogta as integer) as value
+from source
+union all
+
+select
+    id              as bronze_id,
+    scrape_id,
+    period_start,
+    period_end,
+    scraped_at,
+    raw_lc_name     as lc_name,
+    'completed' as stage,
+    'ogte'    as program,
+    cast(cp_ogte as integer) as value
+from source
+
+
+  );
+  
+[0m11:23:25.700239 [debug] [Thread-1 (]: Using postgres connection "model.aiesec_tunisia.dim_direction"
+[0m11:23:25.701576 [debug] [Thread-2 (]: SQL status: BEGIN in 0.0 seconds
+[0m11:23:25.705261 [debug] [Thread-1 (]: On model.aiesec_tunisia.dim_direction: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "aiesec_tunisia", "target_name": "dev", "node_id": "model.aiesec_tunisia.dim_direction"} */
+
+  
+    
+
+  create  table "aiesec_dw"."gold"."dim_direction__dbt_tmp"
+  
+  
+    as
+  
+  (
+    select
+    row_number() over (order by direction_code) as direction_key,
+    direction_code,
+    direction_name
+from "aiesec_dw"."silver"."direction_lookup"
+  );
+  
+[0m11:23:25.708731 [debug] [Thread-2 (]: Using postgres connection "model.aiesec_tunisia.dim_product"
+[0m11:23:25.729516 [debug] [Thread-2 (]: On model.aiesec_tunisia.dim_product: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "aiesec_tunisia", "target_name": "dev", "node_id": "model.aiesec_tunisia.dim_product"} */
+
+  
+    
+
+  create  table "aiesec_dw"."gold"."dim_product__dbt_tmp"
+  
+  
+    as
+  
+  (
+    select
+    row_number() over (order by product_code) as product_key,
+    product_code,
+    product_name
+from "aiesec_dw"."silver"."product_lookup"
+  );
+  
+[0m11:23:25.857586 [debug] [Thread-1 (]: SQL status: SELECT 3 in 0.0 seconds
+[0m11:23:25.872632 [debug] [Thread-2 (]: SQL status: SELECT 4 in 0.0 seconds
+[0m11:23:25.899997 [debug] [Thread-1 (]: Using postgres connection "model.aiesec_tunisia.dim_direction"
+[0m11:23:26.064311 [debug] [Thread-2 (]: Using postgres connection "model.aiesec_tunisia.dim_product"
+[0m11:23:26.067495 [debug] [Thread-1 (]: On model.aiesec_tunisia.dim_direction: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "aiesec_tunisia", "target_name": "dev", "node_id": "model.aiesec_tunisia.dim_direction"} */
+alter table "aiesec_dw"."gold"."dim_direction" rename to "dim_direction__dbt_backup"
+[0m11:23:26.073049 [debug] [Thread-2 (]: On model.aiesec_tunisia.dim_product: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "aiesec_tunisia", "target_name": "dev", "node_id": "model.aiesec_tunisia.dim_product"} */
+alter table "aiesec_dw"."gold"."dim_product" rename to "dim_product__dbt_backup"
+[0m11:23:26.087152 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m11:23:26.089001 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m11:23:26.101078 [debug] [Thread-2 (]: Using postgres connection "model.aiesec_tunisia.dim_product"
+[0m11:23:26.111271 [debug] [Thread-1 (]: Using postgres connection "model.aiesec_tunisia.dim_direction"
+[0m11:23:26.113498 [debug] [Thread-2 (]: On model.aiesec_tunisia.dim_product: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "aiesec_tunisia", "target_name": "dev", "node_id": "model.aiesec_tunisia.dim_product"} */
+alter table "aiesec_dw"."gold"."dim_product__dbt_tmp" rename to "dim_product"
+[0m11:23:26.116048 [debug] [Thread-1 (]: On model.aiesec_tunisia.dim_direction: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "aiesec_tunisia", "target_name": "dev", "node_id": "model.aiesec_tunisia.dim_direction"} */
+alter table "aiesec_dw"."gold"."dim_direction__dbt_tmp" rename to "dim_direction"
+[0m11:23:26.119861 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m11:23:26.122339 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m11:23:26.135976 [debug] [Thread-3 (]: SQL status: SELECT 24024 in 0.0 seconds
+[0m11:23:26.215702 [debug] [Thread-3 (]: Using postgres connection "model.aiesec_tunisia.performance"
+[0m11:23:26.219021 [debug] [Thread-1 (]: On model.aiesec_tunisia.dim_direction: COMMIT
+[0m11:23:26.224613 [debug] [Thread-2 (]: On model.aiesec_tunisia.dim_product: COMMIT
+[0m11:23:26.228267 [debug] [Thread-3 (]: On model.aiesec_tunisia.performance: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "aiesec_tunisia", "target_name": "dev", "node_id": "model.aiesec_tunisia.performance"} */
+alter table "aiesec_dw"."silver"."performance" rename to "performance__dbt_backup"
+[0m11:23:26.231526 [debug] [Thread-1 (]: Using postgres connection "model.aiesec_tunisia.dim_direction"
+[0m11:23:26.234649 [debug] [Thread-2 (]: Using postgres connection "model.aiesec_tunisia.dim_product"
+[0m11:23:26.239340 [debug] [Thread-1 (]: On model.aiesec_tunisia.dim_direction: COMMIT
+[0m11:23:26.240168 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m11:23:26.241943 [debug] [Thread-2 (]: On model.aiesec_tunisia.dim_product: COMMIT
+[0m11:23:26.253589 [debug] [Thread-3 (]: Using postgres connection "model.aiesec_tunisia.performance"
+[0m11:23:26.254284 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m11:23:26.257840 [debug] [Thread-3 (]: On model.aiesec_tunisia.performance: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "aiesec_tunisia", "target_name": "dev", "node_id": "model.aiesec_tunisia.performance"} */
+alter table "aiesec_dw"."silver"."performance__dbt_tmp" rename to "performance"
+[0m11:23:26.265498 [debug] [Thread-2 (]: SQL status: COMMIT in 0.0 seconds
+[0m11:23:26.270482 [debug] [Thread-1 (]: Applying DROP to: "aiesec_dw"."gold"."dim_direction__dbt_backup"
+[0m11:23:26.272767 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m11:23:26.276840 [debug] [Thread-2 (]: Applying DROP to: "aiesec_dw"."gold"."dim_product__dbt_backup"
+[0m11:23:26.289172 [debug] [Thread-1 (]: Using postgres connection "model.aiesec_tunisia.dim_direction"
+[0m11:23:26.292106 [debug] [Thread-3 (]: On model.aiesec_tunisia.performance: COMMIT
+[0m11:23:26.294298 [debug] [Thread-2 (]: Using postgres connection "model.aiesec_tunisia.dim_product"
+[0m11:23:26.296327 [debug] [Thread-1 (]: On model.aiesec_tunisia.dim_direction: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "aiesec_tunisia", "target_name": "dev", "node_id": "model.aiesec_tunisia.dim_direction"} */
+drop table if exists "aiesec_dw"."gold"."dim_direction__dbt_backup" cascade
+[0m11:23:26.297864 [debug] [Thread-3 (]: Using postgres connection "model.aiesec_tunisia.performance"
+[0m11:23:26.299431 [debug] [Thread-2 (]: On model.aiesec_tunisia.dim_product: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "aiesec_tunisia", "target_name": "dev", "node_id": "model.aiesec_tunisia.dim_product"} */
+drop table if exists "aiesec_dw"."gold"."dim_product__dbt_backup" cascade
+[0m11:23:26.303715 [debug] [Thread-3 (]: On model.aiesec_tunisia.performance: COMMIT
+[0m11:23:26.311748 [debug] [Thread-3 (]: SQL status: COMMIT in 0.0 seconds
+[0m11:23:26.316631 [debug] [Thread-3 (]: Applying DROP to: "aiesec_dw"."silver"."performance__dbt_backup"
+[0m11:23:26.318965 [debug] [Thread-3 (]: Using postgres connection "model.aiesec_tunisia.performance"
+[0m11:23:26.320044 [debug] [Thread-2 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m11:23:26.320680 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m11:23:26.321938 [debug] [Thread-3 (]: On model.aiesec_tunisia.performance: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "aiesec_tunisia", "target_name": "dev", "node_id": "model.aiesec_tunisia.performance"} */
+drop table if exists "aiesec_dw"."silver"."performance__dbt_backup" cascade
+[0m11:23:26.325853 [debug] [Thread-2 (]: On model.aiesec_tunisia.dim_product: Close
+[0m11:23:26.329309 [debug] [Thread-1 (]: On model.aiesec_tunisia.dim_direction: Close
+[0m11:23:26.334808 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1a40590c-9564-4b49-aacb-688c92473dde', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7006361fcd10>]}
+[0m11:23:26.337574 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1a40590c-9564-4b49-aacb-688c92473dde', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70063640bf90>]}
+[0m11:23:26.341358 [debug] [Thread-3 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m11:23:26.344484 [info ] [Thread-2 (]: 2 of 4 OK created sql table model gold.dim_product ............................. [[32mSELECT 4[0m in 0.96s]
+[0m11:23:26.347762 [info ] [Thread-1 (]: 1 of 4 OK created sql table model gold.dim_direction ........................... [[32mSELECT 3[0m in 0.96s]
+[0m11:23:26.352064 [debug] [Thread-3 (]: On model.aiesec_tunisia.performance: Close
+[0m11:23:26.354946 [debug] [Thread-2 (]: Finished running node model.aiesec_tunisia.dim_product
+[0m11:23:26.357649 [debug] [Thread-1 (]: Finished running node model.aiesec_tunisia.dim_direction
+[0m11:23:26.360785 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1a40590c-9564-4b49-aacb-688c92473dde', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7006364dee50>]}
+[0m11:23:26.366643 [info ] [Thread-3 (]: 3 of 4 OK created sql table model silver.performance ........................... [[32mSELECT 24024[0m in 0.98s]
+[0m11:23:26.369896 [debug] [Thread-3 (]: Finished running node model.aiesec_tunisia.performance
+[0m11:23:26.373706 [debug] [Thread-4 (]: Began running node model.aiesec_tunisia.fact_performance
+[0m11:23:26.376737 [info ] [Thread-4 (]: 4 of 4 START sql table model gold.fact_performance ............................. [RUN]
+[0m11:23:26.380241 [debug] [Thread-4 (]: Acquiring new postgres connection 'model.aiesec_tunisia.fact_performance'
+[0m11:23:26.383643 [debug] [Thread-4 (]: Began compiling node model.aiesec_tunisia.fact_performance
+[0m11:23:26.396653 [debug] [Thread-4 (]: Writing injected SQL for node "model.aiesec_tunisia.fact_performance"
+[0m11:23:26.416180 [debug] [Thread-4 (]: Began executing node model.aiesec_tunisia.fact_performance
+[0m11:23:26.430084 [debug] [Thread-4 (]: Writing runtime sql for node "model.aiesec_tunisia.fact_performance"
+[0m11:23:26.461681 [debug] [Thread-4 (]: Using postgres connection "model.aiesec_tunisia.fact_performance"
+[0m11:23:26.465548 [debug] [Thread-4 (]: On model.aiesec_tunisia.fact_performance: BEGIN
+[0m11:23:26.468357 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m11:23:26.489384 [debug] [Thread-4 (]: SQL status: BEGIN in 0.0 seconds
+[0m11:23:26.491072 [debug] [Thread-4 (]: Using postgres connection "model.aiesec_tunisia.fact_performance"
+[0m11:23:26.493097 [debug] [Thread-4 (]: On model.aiesec_tunisia.fact_performance: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "aiesec_tunisia", "target_name": "dev", "node_id": "model.aiesec_tunisia.fact_performance"} */
+
+  
+    
+
+  create  table "aiesec_dw"."gold"."fact_performance__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with perf as (
+    select * from "aiesec_dw"."silver"."performance"
+),
+
+program_map as (
+    select * from "aiesec_dw"."silver"."program_map"
+)
+
+select
+    perf.bronze_id                          as performance_id,
+    lc.lc_key,
+    dt.date_key,
+    dir.direction_key,
+    prod.product_key,
+    stg.stage_key,
+    perf.value,
+    perf.scrape_id,
+    perf.scraped_at
+from perf
+left join program_map                      pm   on perf.program = pm.program_code
+left join "aiesec_dw"."gold"."dim_lc"        lc   on perf.lc_name = lc.lc_name
+left join "aiesec_dw"."gold"."dim_date"      dt   on to_date(perf.period_start, 'MM/DD/YYYY') = dt.date
+left join "aiesec_dw"."gold"."dim_direction" dir  on pm.direction_code = dir.direction_code
+left join "aiesec_dw"."gold"."dim_product"   prod on pm.product_code = prod.product_code
+left join "aiesec_dw"."gold"."dim_stage"     stg  on perf.stage = stg.stage_name
+  );
+  
+[0m11:23:27.999038 [debug] [Thread-4 (]: SQL status: SELECT 24024 in 2.0 seconds
+[0m11:23:28.014004 [debug] [Thread-4 (]: Using postgres connection "model.aiesec_tunisia.fact_performance"
+[0m11:23:28.015880 [debug] [Thread-4 (]: On model.aiesec_tunisia.fact_performance: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "aiesec_tunisia", "target_name": "dev", "node_id": "model.aiesec_tunisia.fact_performance"} */
+alter table "aiesec_dw"."gold"."fact_performance" rename to "fact_performance__dbt_backup"
+[0m11:23:28.018151 [debug] [Thread-4 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m11:23:28.022767 [debug] [Thread-4 (]: Using postgres connection "model.aiesec_tunisia.fact_performance"
+[0m11:23:28.024178 [debug] [Thread-4 (]: On model.aiesec_tunisia.fact_performance: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "aiesec_tunisia", "target_name": "dev", "node_id": "model.aiesec_tunisia.fact_performance"} */
+alter table "aiesec_dw"."gold"."fact_performance__dbt_tmp" rename to "fact_performance"
+[0m11:23:28.026102 [debug] [Thread-4 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m11:23:28.029068 [debug] [Thread-4 (]: On model.aiesec_tunisia.fact_performance: COMMIT
+[0m11:23:28.030571 [debug] [Thread-4 (]: Using postgres connection "model.aiesec_tunisia.fact_performance"
+[0m11:23:28.031865 [debug] [Thread-4 (]: On model.aiesec_tunisia.fact_performance: COMMIT
+[0m11:23:28.042309 [debug] [Thread-4 (]: SQL status: COMMIT in 0.0 seconds
+[0m11:23:28.046488 [debug] [Thread-4 (]: Applying DROP to: "aiesec_dw"."gold"."fact_performance__dbt_backup"
+[0m11:23:28.048202 [debug] [Thread-4 (]: Using postgres connection "model.aiesec_tunisia.fact_performance"
+[0m11:23:28.050166 [debug] [Thread-4 (]: On model.aiesec_tunisia.fact_performance: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "aiesec_tunisia", "target_name": "dev", "node_id": "model.aiesec_tunisia.fact_performance"} */
+drop table if exists "aiesec_dw"."gold"."fact_performance__dbt_backup" cascade
+[0m11:23:28.151351 [debug] [Thread-4 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m11:23:28.155796 [debug] [Thread-4 (]: On model.aiesec_tunisia.fact_performance: Close
+[0m11:23:28.159126 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1a40590c-9564-4b49-aacb-688c92473dde', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x700637f248d0>]}
+[0m11:23:28.165928 [info ] [Thread-4 (]: 4 of 4 OK created sql table model gold.fact_performance ........................ [[32mSELECT 24024[0m in 1.78s]
+[0m11:23:28.177825 [debug] [Thread-4 (]: Finished running node model.aiesec_tunisia.fact_performance
+[0m11:23:28.190860 [debug] [MainThread]: Using postgres connection "master"
+[0m11:23:28.199324 [debug] [MainThread]: On master: BEGIN
+[0m11:23:28.202080 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:23:28.225686 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m11:23:28.229153 [debug] [MainThread]: On master: COMMIT
+[0m11:23:28.231795 [debug] [MainThread]: Using postgres connection "master"
+[0m11:23:28.234203 [debug] [MainThread]: On master: COMMIT
+[0m11:23:28.237323 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m11:23:28.239788 [debug] [MainThread]: On master: Close
+[0m11:23:28.243062 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:23:28.245588 [debug] [MainThread]: Connection 'model.aiesec_tunisia.dim_product' was properly closed.
+[0m11:23:28.248322 [debug] [MainThread]: Connection 'model.aiesec_tunisia.dim_direction' was properly closed.
+[0m11:23:28.250318 [debug] [MainThread]: Connection 'model.aiesec_tunisia.performance' was properly closed.
+[0m11:23:28.252251 [debug] [MainThread]: Connection 'model.aiesec_tunisia.fact_performance' was properly closed.
+[0m11:23:28.255013 [info ] [MainThread]: 
+[0m11:23:28.257423 [info ] [MainThread]: Finished running 4 table models in 0 hours 0 minutes and 3.77 seconds (3.77s).
+[0m11:23:28.262177 [debug] [MainThread]: Command end result
+[0m11:23:28.417714 [info ] [MainThread]: 
+[0m11:23:28.421072 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:23:28.424142 [info ] [MainThread]: 
+[0m11:23:28.427122 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+[0m11:23:28.433892 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 6.468325, "process_user_time": 4.879277, "process_kernel_time": 0.910964, "process_mem_max_rss": "116176", "process_in_blocks": "10080", "process_out_blocks": "0"}
+[0m11:23:28.437070 [debug] [MainThread]: Command `dbt run` succeeded at 11:23:28.436638 after 6.47 seconds
+[0m11:23:28.442184 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x700638178510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70063bdecb90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70063bf48810>]}
+[0m11:23:28.446020 [debug] [MainThread]: Flushing usage events
